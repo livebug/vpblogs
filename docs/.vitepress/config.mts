@@ -4,6 +4,7 @@ import { VitePressSidebarOptions } from 'vitepress-sidebar/types';
 
 const vitePressOptions = {
   // VitePress's options here...
+  base: '/vpblogs/',
   title: "Livebug's Space",
   description: "学习、心得、记录、随笔",
   themeConfig: {
