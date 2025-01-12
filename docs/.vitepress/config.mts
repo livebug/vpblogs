@@ -15,7 +15,10 @@ const vitePressOptions = {
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/livebug' }
-    ]
+    ],
+    outline: {
+      level:[2,4]
+    }
   }
 };
 
