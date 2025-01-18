@@ -1,5 +1,7 @@
 ---
 title: vitepress 部署，发布到github pages
+tags:
+  - VitePress
 ---
 
 # vitepress 部署，发布到gitpages
