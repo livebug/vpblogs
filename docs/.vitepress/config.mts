@@ -19,7 +19,8 @@ const vitePressOptions = {
     outline: {
       level:[2,4]
     }
-  }
+    ,commitRepoUrl: 'https://github.com/livebug/vpblogs/',
+  },
 };
 
 function f1() {
