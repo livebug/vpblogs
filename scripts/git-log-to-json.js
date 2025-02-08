@@ -34,7 +34,7 @@ const parseLog = (log) => {
 
 // 保存到 docs/.vitepress/commits.json
 const saveLog = (data) => {
-  const outputPath = path.join(__dirname, '../docs/.vitepress/commits.json')
+  const outputPath = path.join(__dirname, '../docs/public/data/commits.json')
   fs.writeFileSync(outputPath, JSON.stringify(data, null, 2))
 }
 

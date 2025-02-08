@@ -13,7 +13,7 @@ console.log(site.value);
 commitRepoUrl.value = site.value.themeConfig.commitRepoUrl
 
 // 加载提交数据
-fetch(`${site.value.base}.vitepress/commits.json`)
+fetch(`${site.value.base}data/commits.json`)
   .then(res => res.json())
   .then(data => commits.value = data)
 </script>

@@ -1,0 +1,79 @@
+[
+  {
+    "hash": "77ceb54",
+    "author": "dingxh-msi",
+    "date": "2025/1/11",
+    "message": "2025011 建立初始化网站     初始化，准备内容主题",
+    "fullDate": "2025-01-11 23:44:20 +0800"
+  },
+  {
+    "hash": "58ffec6",
+    "author": "dingxh-msi",
+    "date": "2025/1/11",
+    "message": "2025011 两篇文章     - learn 【VitePress Sidebar 动态侧边栏插件】学习使用     - note 【本网站版本记录】  以后对网站调整修订记录",
+    "fullDate": "2025-01-11 23:44:47 +0800"
+  },
+  {
+    "hash": "1fd95e5",
+    "author": "dingxh-msi",
+    "date": "2025/1/12",
+    "message": "2020112 增加自动部署流程ACTION",
+    "fullDate": "2025-01-12 17:38:11 +0800"
+  },
+  {
+    "hash": "49d098f",
+    "author": "dingxh-msi",
+    "date": "2025/1/12",
+    "message": "fix 修正自动流程，pnpm找不到，需要单独安装",
+    "fullDate": "2025-01-12 17:41:35 +0800"
+  },
+  {
+    "hash": "85c07ec",
+    "author": "dingxh-msi",
+    "date": "2025/1/12",
+    "message": "20250112 搭建自动化发布、调整outline展示层级",
+    "fullDate": "2025-01-12 18:50:35 +0800"
+  },
+  {
+    "hash": "b78a368",
+    "author": "livebug",
+    "date": "2025/1/12",
+    "message": "Update deploy.yml",
+    "fullDate": "2025-01-12 18:52:14 +0800"
+  },
+  {
+    "hash": "ec0fec9",
+    "author": "dingxh-msi",
+    "date": "2025/1/12",
+    "message": "fix 修正路径问题 (!) Found dead link /learn%5C20250112_vitepress_deploy_to_gitpages in file note/20250111_blogs_xiugaijilu.md",
+    "fullDate": "2025-01-12 18:55:38 +0800"
+  },
+  {
+    "hash": "bb99cc2",
+    "author": "dingxh-msi",
+    "date": "2025/1/18",
+    "message": "为文章增加标签",
+    "fullDate": "2025-01-18 15:39:53 +0800"
+  },
+  {
+    "hash": "febc84a",
+    "author": "dingxh-msi",
+    "date": "2025/1/18",
+    "message": "增加文章【Vue3 使用 mockjs 模拟api数据】",
+    "fullDate": "2025-01-18 23:45:59 +0800"
+  },
+  {
+    "hash": "ae2719f",
+    "author": "dingxh-msi",
+    "date": "2025/2/4",
+    "message": " 20250204 \t+ 调整使用 Obsidian 写文档，docs可以直接在软件中写 \t+ 增加文章【个人博客系统的想法】",
+    "fullDate": "2025-02-04 18:57:01 +0800"
+  },
+  {
+    "hash": "293ccde",
+    "author": "dingxh-msi",
+    "date": "2025/2/9",
+    "message": "20250209 注册自定义全局组件-Git提交记录时间轴组件。根据git提交记录自动生成；替换原来的手写时间轴",
+    "fullDate": "2025-02-09 01:11:37 +0800"
+  }
+]
