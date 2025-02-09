@@ -75,5 +75,12 @@
     "date": "2025/2/9",
     "message": "20250209 注册自定义全局组件-Git提交记录时间轴组件。根据git提交记录自动生成；替换原来的手写时间轴",
     "fullDate": "2025-02-09 01:11:37 +0800"
+  },
+  {
+    "hash": "0fca45a",
+    "author": "dingxh-msi",
+    "date": "2025/2/9",
+    "message": "fix 修正github action 运行失败的问题。生成的json文件调整到public目录",
+    "fullDate": "2025-02-09 01:17:04 +0800"
   }
 ]

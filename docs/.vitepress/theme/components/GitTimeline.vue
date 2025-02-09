@@ -2,20 +2,17 @@
 <script setup>
 import { ref } from 'vue'
 import { useData } from 'vitepress';
-const { site } = useData()
+import commitsData from '../../../public/data/commits.json';
 
+const { site } = useData()
 const commits = ref([])
 const commitRepoUrl =ref('')
-
-console.log(site.value);
-
+const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
 commitRepoUrl.value = site.value.themeConfig.commitRepoUrl
 
 // 加载提交数据
-fetch(`${site.value.base}data/commits.json`)
-  .then(res => res.json())
-  .then(data => commits.value = data)
+commits.value = commitsData
 </script>
 
 <template>
