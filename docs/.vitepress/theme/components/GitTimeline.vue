@@ -1,18 +1,25 @@
 <!-- docs/.vitepress/theme/components/GitTimeline.vue -->
 <script setup>
 import { ref } from 'vue'
-import { useData } from 'vitepress';
-import commitsData from '../../../public/data/commits.json';
+import { useData, withBase } from 'vitepress';
 
 const { site } = useData()
 const commits = ref([])
 const commitRepoUrl =ref('')
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
 commitRepoUrl.value = site.value.themeConfig.commitRepoUrl
 
 // 加载提交数据
-commits.value = commitsData
+
+// 加载提交数据
+fetch(withBase('/data/commits.json'))
+  .then(res => res.json())
+  .then(data => commits.value = data)
+  .catch(error => {
+        console.error('数据加载失败:')
+        commits.value = [{ message: '加载提交历史失败' }]
+      })
+
 </script>
 
 <template>

@@ -15,12 +15,14 @@ const getGitLog = () => {
   return execSync(command).toString()
 }
 
+const regex = /fix|Merge/;
+
 // 转换日志为 JSON
 const parseLog = (log) => {
   return log.split('\n')
     .filter(Boolean)
     .map(line => {
-      const [hash, author, date, message] = line.split('~@~')
+      const [hash, author, date, message] = line.split('~@~') 
       return {
         hash: hash.substring(0, 7),
         author,
@@ -29,7 +31,8 @@ const parseLog = (log) => {
         fullDate: date
       }
     })
-    .reverse() // 按时间正序排列
+    .filter(item => !regex.test(item.message))
+    // .reverse() // 按时间正序排列
 }
 
 // 保存到 docs/.vitepress/commits.json
