@@ -7,11 +7,13 @@ const vitePressOptions = {
   base: '/vpblogs/',
   title: "Livebug's Space",
   description: "学习、心得、记录、随笔",
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/examples/' }
+      { text: 'About', link: '/examples/' },
+      { text: 'Tags', link: '/note/tags' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/livebug' }
