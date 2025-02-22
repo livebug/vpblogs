@@ -1,7 +1,12 @@
 // scripts/gitlog.js
-const { execSync } = require('child_process')
-const fs = require('fs')
-const path = require('path')
+import { execSync } from 'child_process'
+import { writeFileSync } from 'fs'
+import { join } from 'path'
+import path from 'path'
+
+const __dirname = path.resolve();
+
+console.log(__dirname);
 
 // 获取 Git 提交记录
 const getGitLog = () => {
@@ -37,8 +42,8 @@ const parseLog = (log) => {
 
 // 保存到 docs/.vitepress/commits.json
 const saveLog = (data) => {
-  const outputPath = path.join(__dirname, '../docs/public/data/commits.json')
-  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2))
+  const outputPath = join(__dirname, './docs/public/data/commits.json')
+  writeFileSync(outputPath, JSON.stringify(data, null, 2))
 }
 
 // 主流程
