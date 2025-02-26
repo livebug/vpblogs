@@ -1,5 +1,33 @@
 [
   {
+    "hash": "cba459c",
+    "author": "dingxh-msi",
+    "date": "2025/2/23",
+    "message": "新增【vitepress 增加标签功能】",
+    "fullDate": "2025-02-23 00:40:31 +0800"
+  },
+  {
+    "hash": "ed517e5",
+    "author": "dingxh-msi",
+    "date": "2025/2/23",
+    "message": "更新文档标题和元数据，添加示例页面的标题信息",
+    "fullDate": "2025-02-23 00:39:42 +0800"
+  },
+  {
+    "hash": "7e1be86",
+    "author": "dingxh-msi",
+    "date": "2025/2/23",
+    "message": "新增标签页，支持在导航中访问标签页面",
+    "fullDate": "2025-02-23 00:38:49 +0800"
+  },
+  {
+    "hash": "330b318",
+    "author": "dingxh-msi",
+    "date": "2025/2/23",
+    "message": "新增标签页组件，支持按标签过滤文章",
+    "fullDate": "2025-02-23 00:38:25 +0800"
+  },
+  {
     "hash": "0f6992f",
     "author": "dingxh-msi",
     "date": "2025/2/20",
