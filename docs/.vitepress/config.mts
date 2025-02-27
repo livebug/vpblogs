@@ -12,8 +12,9 @@ const vitePressOptions = {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/examples/' },
-      { text: 'Tags', link: '/note/tags' }
+      { text: 'About', link: '/note/about' },
+      { text: 'Tags', link: '/note/tags' },
+      { text: 'ChangeLog', link: '/note/changelog'}
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/livebug' }

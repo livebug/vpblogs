@@ -1,5 +1,7 @@
 ---
 title: 本网站版本记录
+sidebar: false
+aside: false
 ---
 
 # 本网站版本记录

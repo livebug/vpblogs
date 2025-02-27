@@ -1,5 +1,19 @@
 [
   {
+    "hash": "62ca90a",
+    "author": "dingxh-msi",
+    "date": "2025/2/27",
+    "message": "更新 python3 基础学习文档，调整标题格式，增强可读性",
+    "fullDate": "2025-02-27 22:42:37 +0800"
+  },
+  {
+    "hash": "efdece7",
+    "author": "dingxh-msi",
+    "date": "2025/2/27",
+    "message": "修正文档，更新 ASP.NET 身份管理解决方案的内容格式，增强可读性",
+    "fullDate": "2025-02-27 22:37:36 +0800"
+  },
+  {
     "hash": "1d6bd8e",
     "author": "dingxh-msi",
     "date": "2025/2/27",
