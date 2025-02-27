@@ -5,7 +5,7 @@ toc: true
 tags:
 - ssh
 - gitee 
-categories: ['技术博客']
+
 ---
 # gitee增加ssh 实现免密访问
 

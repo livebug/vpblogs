@@ -1,8 +1,7 @@
 ---
 title : 'categories和types有什么区别吗'
 date : 2023-10-08T22:39:48+08:00
-toc: true
-categories: ['随笔摘记']
+toc: true 
 ---
 # 单词释义 categories和types有什么区别吗
 category是一级分类，type是二级分类。

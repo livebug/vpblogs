@@ -3,7 +3,7 @@ title : 'Github Sync 433 Error'
 date : 2024-01-31T14:10:21+08:00
 toc: true
 tags: ['github','git']
-categories: ['技术博客']
+
 ---
 # Github Sync 433 Error
 

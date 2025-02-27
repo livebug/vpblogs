@@ -3,7 +3,7 @@ title : '自建 pip 私有源'
 date : 2024-02-25T17:30:25+08:00
 toc: true
 tags: ['python','pypi']
-categories: ['技术博客']
+
 ---
 # 自建 pip 私有源
 

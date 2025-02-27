@@ -6,7 +6,7 @@ tags:
 - fedora
 - linux
 - samba
-categories: ['技术博客']
+
 ---
 # fedora打开Samba端口
 

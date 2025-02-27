@@ -7,7 +7,7 @@ tags:
 - nvm
 - nodejs
 - linux
-categories: ['技术博客']
+
 ---
 # wsl环境初始化-安装nvm
 

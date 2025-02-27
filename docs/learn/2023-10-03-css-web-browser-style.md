@@ -5,7 +5,7 @@ toc: true
 # draft : true
 tags :
 - css 
-categories: ['技术博客']
+
 ---
 # css—用户代理样式表
 

@@ -72,13 +72,13 @@ function filterByTag(tag) {
     flex-wrap: wrap;
     margin-bottom: 20px;
     padding: 0 1rem 0 1rem;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .tag {
     background: #eee;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 3px 8px;
     margin: 5px;
     cursor: pointer;
 }

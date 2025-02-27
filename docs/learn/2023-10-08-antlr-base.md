@@ -5,7 +5,7 @@ toc: true
 # draft : true
 tags :
 - antlr4
-categories: ['技术博客']
+
 ---
 # Antlr4 基础介绍
 

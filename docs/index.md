@@ -21,7 +21,7 @@ hero:
       link: /write
     - theme: brand
       text: 全部
-      link: /examples
+      link: /note/tags
 
 features:
   - title: 学习

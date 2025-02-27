@@ -1,5 +1,12 @@
 [
   {
+    "hash": "ae84be3",
+    "author": "dingxh-msi",
+    "date": "2025/2/26",
+    "message": "迁移部分历史文档。新增多篇技术博客文章，涵盖主题包括类别与类型的区别、CSS 用户代理样式表、Fedora Samba 端口设置、GitHub 同步错误解决、正则表达式先行断言与后行断言、ASP.NET 身份管理解决方案等",
+    "fullDate": "2025-02-26 22:52:45 +0800"
+  },
+  {
     "hash": "cba459c",
     "author": "dingxh-msi",
     "date": "2025/2/23",

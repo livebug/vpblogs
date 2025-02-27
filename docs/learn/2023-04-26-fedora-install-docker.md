@@ -7,7 +7,7 @@ tags:
 - gauss
 - fedora
 - linux
-categories: ['技术博客']
+
 ---
 # fedora安装docker
 

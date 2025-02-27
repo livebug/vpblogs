@@ -36,6 +36,8 @@ function f1() {
       scanStartPath: `${name}`,
       basePath: `/${name}/`,
       resolvePath: `/${name}/`,
+      sortMenusByFileDatePrefix: true,
+      sortMenusOrderByDescending: true,
 
       collapsed: false,
       capitalizeFirst: true,
@@ -57,7 +59,7 @@ function f1() {
 
 const vitePressSidebarOptions_: VitePressSidebarOptions[] = [...f1(),
 {
-  // 全部的展示页面
+  // 全部的展示页面 
   // VitePress Sidebar's options here...
   documentRootPath: 'docs',
   resolvePath: `/`,
