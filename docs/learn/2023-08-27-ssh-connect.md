@@ -77,7 +77,7 @@ After=netfilter-persistent.service
 
 ```
 ### root安装的docker，普通用户无法使用  
-需要将普通用户增加到docker用户组，见[安装 docker - 权限问题]({{< ref "20230426-fedora-install-docker.md/#权限问题" >}} "安装 docker - 权限问题")
+需要将普通用户增加到docker用户组，见[安装 docker - 权限问题](./2023-04-26-fedora-install-docker.md)
 
 ```bash
 permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
