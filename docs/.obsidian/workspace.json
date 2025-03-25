@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+                "file": "learn/离线使用手册/2025-03-25-go.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-24-vscode-ex01"
+              "title": "2025-03-25-go"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+                "file": "learn/离线使用手册/2025-03-25-go.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-03-24-vscode-ex01 的大纲"
+              "title": "2025-03-25-go 的大纲"
             }
           }
         ],
@@ -169,16 +168,23 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "42d40da42f8c1b3f",
+  "active": "029834d575c1dc45",
   "lastOpenFiles": [
-    "learn/2023-09-09-vscode-sqllang.md",
+    "public/images/Pasted image 20250325135014.png",
+    "public/images/Pasted image 20250325130039.png",
+    "Pasted image 20250325130039.png",
+    "Pasted image 20250325125950.png",
     "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+    "learn/离线使用手册/2025-03-25-go.md",
+    "learn/离线使用手册",
+    "未命名",
+    "未命名.md",
+    "learn/2023-09-09-vscode-sqllang.md",
     "learn/2023-04-22-fedoraInstall.md",
     "learn/VsCode/2025-03-24-vscode-ex01.md.md",
     "learn/VsCodeEx/2025-03-24-vscode-ex01.md.md",
     "learn/VSCodeEx",
     "learn/VsCode",
-    "未命名",
     "learn/2024-01-08-set-wsl2-net-proxy.md",
     "2025-03-01_fastify_base.md",
     "learn/2025-03-01_fastify_base.md",
@@ -204,12 +210,8 @@
     "public/data",
     "public",
     "public/1.json",
-    "public/data/git-timeline.json",
     "think/20250204_blogs_ideas.md",
     "examples/markdown-examples.md",
-    "note/index.md",
-    "index.md",
-    "think/index.md",
     "未命名.canvas",
     "think/未命名.canvas"
   ]
