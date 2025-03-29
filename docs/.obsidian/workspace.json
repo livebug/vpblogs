@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#方案一：使用Code",
+                "query": "tag:标签",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 409.5,
+    "collapsed": true
   },
   "right": {
     "id": "3fec0fa18eeddf0b",
@@ -170,12 +171,14 @@
   },
   "active": "029834d575c1dc45",
   "lastOpenFiles": [
+    "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+    "learn/VSCodeEx/2025-03-27-vscode-tasks.md",
+    "learn/离线使用手册/2025-03-25-go.md",
+    "learn/Golang",
     "public/images/Pasted image 20250325135014.png",
     "public/images/Pasted image 20250325130039.png",
     "Pasted image 20250325130039.png",
     "Pasted image 20250325125950.png",
-    "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
-    "learn/离线使用手册/2025-03-25-go.md",
     "learn/离线使用手册",
     "未命名",
     "未命名.md",
@@ -209,7 +212,6 @@
     "public/data/commits.json",
     "public/data",
     "public",
-    "public/1.json",
     "think/20250204_blogs_ideas.md",
     "examples/markdown-examples.md",
     "未命名.canvas",
