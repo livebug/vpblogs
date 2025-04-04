@@ -1,5 +1,33 @@
 [
   {
+    "hash": "9b3e95d",
+    "author": "dingxh-msi",
+    "date": "2025/4/4",
+    "message": "更新主题和工作区配置，修改 CSS 主题为 Typewriter，新增附件文件夹路径和相对链接格式，调整工作区 ID 和最近打开文件",
+    "fullDate": "2025-04-04 10:25:19 +0800"
+  },
+  {
+    "hash": "3c269cc",
+    "author": "Your Name",
+    "date": "2025/4/3",
+    "message": "新增文档，创建 Powershell 基础使用指南，记录常见问题及解决方案",
+    "fullDate": "2025-04-03 18:41:43 +0800"
+  },
+  {
+    "hash": "e031568",
+    "author": "Your Name",
+    "date": "2025/3/29",
+    "message": "更新文档，新增 VSCode 插件开发学习-第二课，调整 Go 环境配置示例，增强可读性",
+    "fullDate": "2025-03-29 12:00:26 +0800"
+  },
+  {
+    "hash": "43eca2a",
+    "author": "Your Name",
+    "date": "2025/3/25",
+    "message": "更新文档，新增 Golang 离线使用手册，调整 Obsidian 配置和工作区设置",
+    "fullDate": "2025-03-25 18:41:42 +0800"
+  },
+  {
     "hash": "c5e9175",
     "author": "dingxh-msi",
     "date": "2025/3/24",
