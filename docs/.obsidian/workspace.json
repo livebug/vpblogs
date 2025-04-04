@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "931134e567246fc2",
+        "id": "bb58542e93243d38",
         "type": "tabs",
         "children": [
           {
-            "id": "029834d575c1dc45",
+            "id": "1cc8179011562be7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,10 +168,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "42d40da42f8c1b3f",
+  "active": "1cc8179011562be7",
   "lastOpenFiles": [
-    "learn/2023-09-09-vscode-sqllang.md",
+    "public/images/Pasted image 20250404102127.png",
     "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+    "learn/2023-09-09-vscode-sqllang.md",
     "learn/2023-04-22-fedoraInstall.md",
     "learn/VsCode/2025-03-24-vscode-ex01.md.md",
     "learn/VsCodeEx/2025-03-24-vscode-ex01.md.md",
@@ -209,7 +209,6 @@
     "examples/markdown-examples.md",
     "note/index.md",
     "index.md",
-    "think/index.md",
     "未命名.canvas",
     "think/未命名.canvas"
   ]
