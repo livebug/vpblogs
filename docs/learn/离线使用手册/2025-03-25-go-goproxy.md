@@ -171,4 +171,10 @@ go mod init <project_name>
 - **验证依赖项**：`go mod verify`
 - **下载依赖项到 vendor 目录**：```go mod vendor```
 
- 
+## 四、VSCode 设置
+
+在线的化直接全选安装就行了。
+
+![](../../public/images/Pasted%20image%2020250405011100.png)
+
+离线的话，就把 GOPATH 的全局目录复制下就行，然后vscode就能能用了
