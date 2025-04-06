@@ -1,5 +1,26 @@
 [
   {
+    "hash": "7bde38c",
+    "author": "dingxh-msi",
+    "date": "2025/4/5",
+    "message": "2025-04-05: 更新《Golang 离线使用》文档，新增VSCode设置部分并添加相关图片",
+    "fullDate": "2025-04-05 01:21:48 +0800"
+  },
+  {
+    "hash": "2a5a2e2",
+    "author": "dingxh-msi",
+    "date": "2025/4/5",
+    "message": "2025-04-04: 更新文档标题，调整《第一课 前提简介》和《第二课 Tasks 使用》的标题格式",
+    "fullDate": "2025-04-05 00:59:03 +0800"
+  },
+  {
+    "hash": "abea353",
+    "author": "dingxh-msi",
+    "date": "2025/4/5",
+    "message": "2025-04-04: 新增文档《Vscode 字体-中文英文等宽》，推荐字体并提供相关链接；新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置；更新 commits.json，记录最近提交信息；新增两张图片。",
+    "fullDate": "2025-04-05 00:56:32 +0800"
+  },
+  {
     "hash": "9b3e95d",
     "author": "dingxh-msi",
     "date": "2025/4/4",

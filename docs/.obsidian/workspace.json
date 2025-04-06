@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "bab2cf91dd9a6888",
+    "id": "55c3cdb0850475dc",
     "type": "split",
     "children": [
       {
-        "id": "bb58542e93243d38",
+        "id": "95da0a38c75161e2",
         "type": "tabs",
         "children": [
           {
-            "id": "1cc8179011562be7",
+            "id": "51df9545e2f8180b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learn/离线使用手册/2025-03-25-go.md",
+                "file": "learn/2025-04-06-go-baseusage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-25-go"
+              "title": "2025-04-06-go-baseusage"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "94c1d6a26bef48f2",
+    "id": "52f9aea22432b467",
     "type": "split",
     "children": [
       {
-        "id": "d407a1f53a63865b",
+        "id": "07361091b9ca7f03",
         "type": "tabs",
         "children": [
           {
-            "id": "051928e7038ad676",
+            "id": "9b7fbd2c2a398da7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,12 +48,12 @@
             }
           },
           {
-            "id": "42d40da42f8c1b3f",
+            "id": "f0c9865f5eb6f142",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:标签",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "7a35f77ba650a2ac",
+            "id": "9a6e59549fcbec7b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,58 +78,56 @@
       }
     ],
     "direction": "horizontal",
-    "width": 409.5,
-    "collapsed": true
+    "width": 322.5110321044922
   },
   "right": {
-    "id": "3fec0fa18eeddf0b",
+    "id": "06ba0f5a017006aa",
     "type": "split",
     "children": [
       {
-        "id": "1555bf738fd75588",
+        "id": "2f57f1e2be92c9ff",
         "type": "tabs",
         "children": [
           {
-            "id": "41d42310dda4e060",
+            "id": "d7a5a6ccd699d817",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "note/20250111_blogs_timeline.md",
-                "collapseAll": true,
-                "extraContext": true,
+                "file": "learn/2025-02-04_Obsidian_baseuse.md",
+                "collapseAll": false,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": false
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "20250111_blogs_timeline 的反向链接列表"
+              "title": "2025-02-04_Obsidian_baseuse 的反向链接列表"
             }
           },
           {
-            "id": "adcc00b2817b632f",
+            "id": "8e449c704f239b47",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "note/20250111_blogs_timeline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "20250111_blogs_timeline 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "ac88ee970551a142",
+            "id": "e5585756a853b207",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false,
+                "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -138,26 +136,25 @@
             }
           },
           {
-            "id": "a90d4912c6902b73",
+            "id": "1a2f9b04423a03d4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "learn/离线使用手册/2025-03-25-go.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-03-25-go 的大纲"
+              "title": "大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,67 +163,29 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false
     }
   },
-<<<<<<< HEAD
-  "active": "029834d575c1dc45",
+  "active": "51df9545e2f8180b",
   "lastOpenFiles": [
-    "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
-    "learn/VSCodeEx/2025-03-27-vscode-tasks.md",
-    "learn/离线使用手册/2025-03-25-go.md",
-    "learn/Golang",
-    "public/images/Pasted image 20250325135014.png",
-    "public/images/Pasted image 20250325130039.png",
-    "Pasted image 20250325130039.png",
-    "Pasted image 20250325125950.png",
-    "learn/离线使用手册",
-    "未命名",
-    "未命名.md",
-=======
-  "active": "1cc8179011562be7",
-  "lastOpenFiles": [
-    "public/images/Pasted image 20250404102127.png",
-    "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
->>>>>>> dev
-    "learn/2023-09-09-vscode-sqllang.md",
-    "learn/2023-04-22-fedoraInstall.md",
-    "learn/VsCode/2025-03-24-vscode-ex01.md.md",
-    "learn/VsCodeEx/2025-03-24-vscode-ex01.md.md",
-    "learn/VSCodeEx",
-    "learn/VsCode",
-    "learn/2024-01-08-set-wsl2-net-proxy.md",
-    "2025-03-01_fastify_base.md",
-    "learn/2025-03-01_fastify_base.md",
-    "note/changelog.md",
-    "note/timeline.md",
-    "note/about.md",
-    "learn/20250222_vitepress_addtagspage.md",
-    "public/images/Pasted image 20250223002934.png",
-    "learn/20250219_python3_baseLearning.md",
-    "public/images",
-    "public/Pasted image 20250223002934.png",
-    "Pasted image 20250223002934.png",
-    "learn/20250215_antlr4_python_learn01.md",
-    "note/tags.md",
-    "tags.md",
-    "archives.md",
-    "learn/2025022_vitepress_addtagspage.md",
-    "tags",
-    "2025022_vitepress_addtagspage.md",
-    "learn/20250209_vitepress_customcomp_timeline.md",
-    "note/20250111_blogs_timeline.md",
-    "public/data/commits.json",
-    "public/data",
-    "public",
-    "think/20250204_blogs_ideas.md",
-    "examples/markdown-examples.md",
-<<<<<<< HEAD
-=======
-    "note/index.md",
-    "index.md",
->>>>>>> dev
+    "learn/离线使用手册/2025-03-25-go-goproxy.md",
+    "learn/2025-04-06-go-baseusage.md",
+    "learn/2025-02-04_Obsidian_baseuse.md",
+    "public/images/Pasted image 20250406153104.png",
+    "learn/vitepress/2025-01-11_vitepress_sidebar_autosider_extention.md",
+    "learn/vitepress/2025-01-12_vitepress_deploy_to_gitpages.md",
+    "learn/vitepress/2025-02-22_vitepress_addtagspage.md",
+    "learn/vitepress/2025-02-09_vitepress_customcomp_timeline.md",
+    "learn/vitepress",
+    "learn/Antlr4/2025-02-15_antlr4_python_learn01.md",
+    "learn/Antlr4/2023-10-08-antlr-base.md",
+    "learn/Antlr4",
     "未命名.canvas",
-    "think/未命名.canvas"
+    "public/images/Pasted image 20250405011100.png",
+    "public/images/Pasted image 20250404123258.png",
+    "public/images/Pasted image 20250404122700.png",
+    "learn/VSCodeEx/2025-04-04-font-zhdk.md",
+    "learn/离线使用手册/2025-03-25-go.md"
   ]
 }

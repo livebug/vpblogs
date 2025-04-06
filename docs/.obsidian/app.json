@@ -1,5 +1,6 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "public/images"
+  "attachmentFolderPath": "public/images",
+  "readableLineLength": false
 }
