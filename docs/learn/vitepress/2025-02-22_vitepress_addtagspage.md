@@ -219,7 +219,7 @@ function filterByTag(tag) {
 
 本次采用的还是基本的，新建一个tags页面，把组件嵌入到页面。
 
-![Pasted image 20250223002934.png](../public/images/Pasted%20image%2020250223002934.png)
+![Pasted image 20250223002934.png](../../public/images/Pasted%20image%2020250223002934.png)
 
 ## 4. 能改进的地方
 
