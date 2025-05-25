@@ -62,76 +62,105 @@ function filterByTag(tag) {
 
 <style scoped>
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(60, 60, 60, 0.08);
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding: 0 1rem 0 1rem;
-    justify-content: start;
+    gap: 10px;
+    margin-bottom: 28px;
+    justify-content: flex-start;
 }
 
 .tag {
-    background: #eee;
-    border-radius: 3px;
-    padding: 3px 8px;
-    margin: 5px;
+    background: #42b883;
+    color: #fff;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-size: 0.98em;
+    margin: 0;
     cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 1px 4px rgba(66, 184, 131, 0.08);
+    user-select: none;
 }
 
-.tag:hover {
-    background: #ddd;
+.tag:hover, .tag.active {
+    background: #35495e;
+    color: #fff;
+    transform: translateY(-2px) scale(1.05);
 }
 
 .posts {
-    padding: 0 1rem 0 0;
+    padding: 0;
 }
 
 .posts .post {
     margin-bottom: 20px;
     list-style: none;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 18px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #f8fafc;
+    transition: box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 1px 6px rgba(60, 60, 60, 0.04);
 }
 
 .posts .post:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    box-shadow: 0 4px 16px rgba(60, 60, 60, 0.10);
+    background: #f3f7fa;
 }
 
 .post-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .post-title {
-    flex: 1;
-    margin-right: 10px;
+    font-weight: 600;
+    font-size: 1.13em;
+    color: #42b883;
+    text-decoration: none;
+    margin-bottom: 2px;
+    transition: color 0.2s;
+}
+
+.post-title:hover {
+    color: #35495e;
+    text-decoration: underline;
 }
 
 .post-meta {
-    flex: 2;
-    font-size: 0.8em;
-    color: #666;
-    margin-right: 10px;
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 4px;
 }
 
 .post-tags {
     display: flex;
     flex-wrap: wrap;
+    gap: 6px;
 }
 
 .post-tag {
-    background: #eee;
-    border-radius: 3px;
-    padding: 2px 5px;
-    margin: 2px;
+    background: #e0f5ef;
+    color: #42b883;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 0.85em;
+    margin: 0;
+    transition: background 0.2s, color 0.2s;
+}
+
+.post-tag:hover {
+    background: #42b883;
+    color: #fff;
 }
 </style>
