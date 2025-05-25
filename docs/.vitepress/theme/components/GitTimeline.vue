@@ -44,57 +44,79 @@ fetch(withBase('/data/commits.json'))
 <style scoped>
 .git-timeline {
   position: relative;
-  padding-left: 20px;
-  margin: 2rem 0;
+  padding-left: 32px;
+  margin: 2.5rem 0;
+  background: var(--vp-c-bg-soft);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(60,60,60,0.04);
 }
 
 .commit-item {
   position: relative;
-  padding: 1rem 0 1rem 2rem;
-  border-left: 2px solid var(--vp-c-divider);
+  padding: 1.2rem 0 1.2rem 2.5rem;
+  border-left: 3px solid var(--vp-c-divider);
+  transition: background 0.2s;
+}
+
+.commit-item:hover {
+  background: var(--vp-c-bg);
 }
 
 .timeline-marker {
   position: absolute;
-  left: -7px;
-  top: 1.5rem;
-  width: 12px;
-  height: 12px;
+  left: -11px;
+  top: 1.7rem;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  background: var(--vp-c-brand);
-  border: 2px solid white;
+  background: linear-gradient(135deg, var(--vp-c-brand) 60%, #fff 100%);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px 0 rgba(60,60,60,0.08);
+  transition: background 0.2s;
 }
 
 .commit-header {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   align-items: baseline;
   margin-bottom: 0.5rem;
 }
 
 .commit-hash {
   font-family: var(--vp-font-family-mono);
-  font-size: 0.9em;
+  font-size: 1em;
   color: var(--vp-c-brand);
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
 }
 
 .commit-hash:hover {
   text-decoration: underline;
+  color: var(--vp-c-brand-dark);
 }
 
 .commit-date {
   color: var(--vp-c-text-2);
-  font-size: 0.9em;
+  font-size: 0.95em;
+  background: var(--vp-c-bg-soft);
+  padding: 2px 8px;
+  border-radius: 6px;
 }
 
 .commit-message {
   color: var(--vp-c-text-1);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.08em;
+  font-weight: 500;
+  word-break: break-word;
 }
 
 .commit-author {
   color: var(--vp-c-text-2);
-  font-size: 0.85em;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 2px;
 }
 </style>
