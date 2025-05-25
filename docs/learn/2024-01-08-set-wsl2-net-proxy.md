@@ -8,6 +8,15 @@ tags:
 
 >该方法引用自： https://www.cnblogs.com/tuilk/p/16287472.html 
 
+## WSL 与 宿主机（windows） 网络通信
+
+1. 获取主机的IP，直接在主机获取，wsl获取主机IP的命令不准，这里也不写了
+2. 在主机防火墙对WSL增加入站规则
+```powershell
+# 管理员运行 powershell
+New-NetFirewallRule -DisplayName "WSL" -Direction Inbound -InterfaceAlias "vEthernet (WSL)" -Action Allow
+```
+
 ## 配置WSL2
 这种配置方法适用于长期配置，也就是写一个脚本，然后可以通过命令启动代理。新建proxy.sh脚本如下：
 
