@@ -25,7 +25,7 @@ aside: false
 + livebug@163.com  
 
 github page:
-+ https://livebug.github.io/
++ https://livebug.github.io/vpblogs
 
 ## 经验小结
 
