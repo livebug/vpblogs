@@ -1,5 +1,40 @@
 [
   {
+    "hash": "4aa8193",
+    "author": "dingxh-msi",
+    "date": "2025/4/20",
+    "message": "2025-04-19: 新增《docker run 手册》文档，包含docker命令的基本用法和参数说明",
+    "fullDate": "2025-04-20 15:57:27 +0800"
+  },
+  {
+    "hash": "dd51de4",
+    "author": "dingxh-msi",
+    "date": "2025/4/13",
+    "message": "2025-04-06: 更新《Antlr4 python 使用》文档，新增分析表的数据库记录结构及相关字段说明",
+    "fullDate": "2025-04-13 22:09:48 +0800"
+  },
+  {
+    "hash": "caaff4a",
+    "author": "dingxh-msi",
+    "date": "2025/4/6",
+    "message": "2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍",
+    "fullDate": "2025-04-06 23:28:32 +0800"
+  },
+  {
+    "hash": "8d8579a",
+    "author": "dingxh-msi",
+    "date": "2025/4/6",
+    "message": "2025-04-06: 更新《Obsidian 使用》文档，新增关于图片格式和位置调整的说明，并添加相关图片。",
+    "fullDate": "2025-04-06 15:47:31 +0800"
+  },
+  {
+    "hash": "239cffb",
+    "author": "dingxh-msi",
+    "date": "2025/4/6",
+    "message": "2025-04-05: 新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置，补充GOPATH和GOMODCACHE的对比说明",
+    "fullDate": "2025-04-06 15:27:43 +0800"
+  },
+  {
     "hash": "7bde38c",
     "author": "dingxh-msi",
     "date": "2025/4/5",

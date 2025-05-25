@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learn/2025-04-06-go-baseusage.md",
+                "file": "learn/VSCodeEx/2025-05-03-vscode-ex02.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-06-go-baseusage"
+              "title": "2025-05-03-vscode-ex02"
+            }
+          },
+          {
+            "id": "1650fe6cfe51c7e0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:标签",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 322.5110321044922
+    "width": 379.5085258483887
   },
   "right": {
     "id": "06ba0f5a017006aa",
@@ -167,10 +180,18 @@
       "publish:发布更改": false
     }
   },
-  "active": "51df9545e2f8180b",
+  "active": "1650fe6cfe51c7e0",
   "lastOpenFiles": [
-    "learn/离线使用手册/2025-03-25-go-goproxy.md",
+    "learn/VSCodeEx/2025-04-04-vscode-font.md",
+    "learn/VSCodeEx/2025-03-27-vscode-tasks.md",
+    "learn/VSCodeEx/2025-03-24-vscode-ex01.md",
+    "learn/VSCodeEx/2025-05-03-vscode-ex02.md",
+    "public/images/Pasted image 20250503220120.png",
+    "public/images/Pasted image 20250503184622.png",
+    "learn/Antlr4/2025-05-03-antlr4-sql-go.md",
+    "learn/Antlr4/2025-02-15_antlr4_python_learn01.md",
     "learn/2025-04-06-go-baseusage.md",
+    "learn/离线使用手册/2025-03-25-go-goproxy.md",
     "learn/2025-02-04_Obsidian_baseuse.md",
     "public/images/Pasted image 20250406153104.png",
     "learn/vitepress/2025-01-11_vitepress_sidebar_autosider_extention.md",
@@ -178,14 +199,12 @@
     "learn/vitepress/2025-02-22_vitepress_addtagspage.md",
     "learn/vitepress/2025-02-09_vitepress_customcomp_timeline.md",
     "learn/vitepress",
-    "learn/Antlr4/2025-02-15_antlr4_python_learn01.md",
     "learn/Antlr4/2023-10-08-antlr-base.md",
     "learn/Antlr4",
     "未命名.canvas",
     "public/images/Pasted image 20250405011100.png",
     "public/images/Pasted image 20250404123258.png",
     "public/images/Pasted image 20250404122700.png",
-    "learn/VSCodeEx/2025-04-04-font-zhdk.md",
     "learn/离线使用手册/2025-03-25-go.md"
   ]
 }
