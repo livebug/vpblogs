@@ -21,7 +21,8 @@
               "title": "2025-05-04-vscode-ex03"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:标签",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 461.5116500854492
+    "width": 379.5085258483887
   },
   "right": {
     "id": "06ba0f5a017006aa",
@@ -179,6 +180,7 @@
     "think/20250204_blogs_ideas.md",
     "think/开发工具箱",
     "learn/2025-04-06-go-baseusage.md",
+    "learn/离线使用手册/2025-03-25-go-goproxy.md",
     "learn/2025-02-04_Obsidian_baseuse.md",
     "public/images/Pasted image 20250406153104.png",
     "learn/vitepress/2025-01-11_vitepress_sidebar_autosider_extention.md",
@@ -186,7 +188,6 @@
     "learn/vitepress/2025-02-22_vitepress_addtagspage.md",
     "learn/vitepress/2025-02-09_vitepress_customcomp_timeline.md",
     "learn/vitepress",
-    "learn/Antlr4/2025-02-15_antlr4_python_learn01.md",
     "learn/Antlr4/2023-10-08-antlr-base.md",
     "learn/Antlr4",
     "未命名.canvas",
