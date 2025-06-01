@@ -64,7 +64,7 @@ function filterByTag(tag) {
 .container {
     margin: 40px auto;
     padding: 32px 24px;
-    background: #fff;
+    background: #c0bfbf;
     border-radius: 12px;
     box-shadow: 0 2px 16px rgba(60, 60, 60, 0.08);
 }
