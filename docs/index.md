@@ -6,6 +6,9 @@ hero:
   name: "Livebug's Space"
   text: "学习、心得、记录、随笔"
   tagline: 雄关漫道真如铁，而今迈步从头越
+  image:
+    src: /images/hero.jpg
+    alt: VitePress
   actions:
     - theme: alt
       text: 学习
