@@ -1,5 +1,12 @@
 [
   {
+    "hash": "3cd990c",
+    "author": "livebug_dev_nuc",
+    "date": "5/25/2025",
+    "message": "feat: 更新 GitTimeline 组件样式，优化视觉效果；添加 ToTop 组件以支持返回顶部功能；更新 commits.json 以包含最新提交信息",
+    "fullDate": "2025-05-25 06:43:48 +0000"
+  },
+  {
     "hash": "6ad87a4",
     "author": "livebug_dev_nuc",
     "date": "5/25/2025",
