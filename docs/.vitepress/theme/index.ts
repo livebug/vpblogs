@@ -5,6 +5,7 @@ import GitTimeline from './components/GitTimeline.vue'
 import TagsPage from './components/TagsPage.vue'
 import ToTop from './components/ToTop.vue'
 import RangeJt from './components/RangeJt.vue'
+import './custom.css'
 import { h } from 'vue'
 
 export default {

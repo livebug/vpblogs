@@ -1,5 +1,19 @@
 [
   {
+    "hash": "9d0c175",
+    "author": "livebug_dev_nuc",
+    "date": "6/1/2025",
+    "message": "feat: 添加 RangeJt 组件以随机生成季和期；更新主题配置以注册新组件；新增 jitiao 页面以展示组件；更新 commits.json 以包含最新提交信息；添加首页英雄图片",
+    "fullDate": "2025-06-01 15:37:17 +0000"
+  },
+  {
+    "hash": "d362fc4",
+    "author": "livebug_dev_nuc",
+    "date": "6/1/2025",
+    "message": "feat: 添加首页英雄部分的图片及描述",
+    "fullDate": "2025-06-01 15:37:02 +0000"
+  },
+  {
     "hash": "3cd990c",
     "author": "livebug_dev_nuc",
     "date": "5/25/2025",

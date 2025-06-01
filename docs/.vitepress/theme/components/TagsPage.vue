@@ -62,7 +62,6 @@ function filterByTag(tag) {
 
 <style scoped>
 .container {
-    max-width: 900px;
     margin: 40px auto;
     padding: 32px 24px;
     background: #fff;

@@ -1,5 +1,6 @@
 ---
 title: 本网站版本记录
+layout: home
 sidebar: false
 aside: false
 ---
@@ -20,3 +21,4 @@ aside: false
 ## git 提交记录 -->
 
 <GitTimeline />
+

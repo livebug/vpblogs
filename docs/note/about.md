@@ -1,5 +1,6 @@
 ---
 title : 'About'
+layout: home
 
 sidebar: false
 aside: false
