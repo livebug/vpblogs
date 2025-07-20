@@ -31,7 +31,7 @@
 <script setup>
 import { computed, ref, onMounted } from 'vue';
 import { useRoute } from 'vitepress';
-import { data as postsData } from '../post.data';
+import { data as postsData } from '../../post.data';
 
 const selectedTag = ref(null);
 const route = useRoute();

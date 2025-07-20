@@ -9,6 +9,7 @@ interface Post {  // ts定义数据类型
   tags: [];
   created: DateInfo;
   updated: DateInfo;
+  dir: string;
 }
 
 interface DateInfo {  // ts定义数据类型
@@ -19,7 +20,7 @@ interface DateInfo {  // ts定义数据类型
 declare const data: Post[];
 export { data };
 
-export default createContentLoader(["../*/*/*.md"], {// 扫描文件的目录
+export default createContentLoader(["../*/*/*.md","../*/*/*/*.md"], {// 扫描文件的目录
   transform(raw): Post[] {
     // console.log("Raw data:", raw); // 输出原始数据
 
