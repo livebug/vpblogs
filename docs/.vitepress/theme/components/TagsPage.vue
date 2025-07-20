@@ -45,7 +45,9 @@ onMounted(() => {
 
 const uniqueTags = computed(() => {
     const tags = postsData.flatMap(post => post.tags);
-    return [...new Set(tags)];
+    const unique = [...new Set(tags)];
+
+    return unique.sort((a, b) => a.localeCompare(b));
 });
 
 const filteredPosts = computed(() => {
@@ -90,7 +92,8 @@ function filterByTag(tag) {
     user-select: none;
 }
 
-.tag:hover, .tag.active {
+.tag:hover,
+.tag.active {
     background: #35495e;
     color: #fff;
     transform: translateY(-2px) scale(1.05);
