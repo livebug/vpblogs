@@ -12,3 +12,8 @@ pip freeze > requirements.txt
 ```bash
 pip download -r .\requirements.txt .\packages\
 ```
+### 3. venv 开发环境
+```bash
+# 基本语法
+python3 -m venv 环境名称
+```

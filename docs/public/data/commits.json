@@ -1,5 +1,19 @@
 [
   {
+    "hash": "bad9bc1",
+    "author": "livebug-msi-ubuntu",
+    "date": "2025/7/20",
+    "message": "2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍",
+    "fullDate": "2025-07-20 20:18:07 +0800"
+  },
+  {
+    "hash": "cfeead5",
+    "author": "livebug-msi-ubuntu",
+    "date": "2025/7/20",
+    "message": "feat: 添加 post.data.ts 文件以定义文章数据结构并实现内容加载功能；修正 TagsPage 组件中对 post.data 的导入路径",
+    "fullDate": "2025-07-20 20:17:59 +0800"
+  },
+  {
     "hash": "71fe259",
     "author": "livebug_dev_nuc",
     "date": "2025/6/1",
