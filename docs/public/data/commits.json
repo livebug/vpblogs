@@ -1,351 +1,372 @@
 [
   {
+    "hash": "ca79abb",
+    "author": "livebug-msi-ubuntu",
+    "date": "8/23/2025",
+    "message": "2025-07-24: 新增 package.json 相关文档，包含支持 Windows 和 Linux 执行不同脚本的示例",
+    "fullDate": "2025-08-23 23:49:56 +0800"
+  },
+  {
+    "hash": "42fa438",
+    "author": "Your Name",
+    "date": "7/29/2025",
+    "message": "feat: 新增 VSCODE 插件开发第四课-打包文档及相关图片",
+    "fullDate": "2025-07-29 14:07:31 +0800"
+  },
+  {
+    "hash": "bc07903",
+    "author": "livebug-msi-ubuntu",
+    "date": "7/20/2025",
+    "message": "feat: 优化 TagsPage 组件的标签排序逻辑；调整样式以提高可读性",
+    "fullDate": "2025-07-20 20:24:59 +0800"
+  },
+  {
     "hash": "bad9bc1",
     "author": "livebug-msi-ubuntu",
-    "date": "2025/7/20",
+    "date": "7/20/2025",
     "message": "2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍",
     "fullDate": "2025-07-20 20:18:07 +0800"
   },
   {
     "hash": "cfeead5",
     "author": "livebug-msi-ubuntu",
-    "date": "2025/7/20",
+    "date": "7/20/2025",
     "message": "feat: 添加 post.data.ts 文件以定义文章数据结构并实现内容加载功能；修正 TagsPage 组件中对 post.data 的导入路径",
     "fullDate": "2025-07-20 20:17:59 +0800"
   },
   {
     "hash": "71fe259",
     "author": "livebug_dev_nuc",
-    "date": "2025/6/1",
+    "date": "6/1/2025",
     "message": "feat: 更新多个页面布局，添加自定义样式；新增 commits.json 以记录最新提交信息",
     "fullDate": "2025-06-01 15:53:06 +0000"
   },
   {
     "hash": "9d0c175",
     "author": "livebug_dev_nuc",
-    "date": "2025/6/1",
+    "date": "6/1/2025",
     "message": "feat: 添加 RangeJt 组件以随机生成季和期；更新主题配置以注册新组件；新增 jitiao 页面以展示组件；更新 commits.json 以包含最新提交信息；添加首页英雄图片",
     "fullDate": "2025-06-01 15:37:17 +0000"
   },
   {
     "hash": "d362fc4",
     "author": "livebug_dev_nuc",
-    "date": "2025/6/1",
+    "date": "6/1/2025",
     "message": "feat: 添加首页英雄部分的图片及描述",
     "fullDate": "2025-06-01 15:37:02 +0000"
   },
   {
     "hash": "3cd990c",
     "author": "livebug_dev_nuc",
-    "date": "2025/5/25",
+    "date": "5/25/2025",
     "message": "feat: 更新 GitTimeline 组件样式，优化视觉效果；添加 ToTop 组件以支持返回顶部功能；更新 commits.json 以包含最新提交信息",
     "fullDate": "2025-05-25 06:43:48 +0000"
   },
   {
     "hash": "6ad87a4",
     "author": "livebug_dev_nuc",
-    "date": "2025/5/25",
+    "date": "5/25/2025",
     "message": "feat: 更新 TagsPage 组件样式，优化标签和文章展示布局",
     "fullDate": "2025-05-25 06:12:22 +0000"
   },
   {
     "hash": "15b7e1a",
     "author": "dingxh-msi",
-    "date": "2025/5/25",
+    "date": "5/25/2025",
     "message": "feat: 添加《snap的docker是如何换源》文档，详细说明了修改配置文件和验证步骤",
     "fullDate": "2025-05-25 13:52:11 +0800"
   },
   {
     "hash": "81f1c93",
     "author": "dingxh-msi",
-    "date": "2025/5/25",
+    "date": "5/25/2025",
     "message": "Add new PNG image to public images directory",
     "fullDate": "2025-05-25 12:39:18 +0800"
   },
   {
     "hash": "5c5c7cd",
     "author": "Your Name",
-    "date": "2025/5/19",
+    "date": "5/19/2025",
     "message": "feat: 更新《WSL2配置代理》文档，新增与宿主机网络通信的说明及防火墙规则配置",
     "fullDate": "2025-05-19 12:54:01 +0800"
   },
   {
     "hash": "a4286a0",
     "author": "Your Name",
-    "date": "2025/5/18",
+    "date": "5/18/2025",
     "message": "feat: 新增《Golang 离线使用》文档，包含开发环境搭建及私有库配置说明",
     "fullDate": "2025-05-18 23:27:41 +0800"
   },
   {
     "hash": "56d94b4",
     "author": "Your Name",
-    "date": "2025/5/18",
+    "date": "5/18/2025",
     "message": "feat: 新增使用 Docker 运行 Verdaccio 文档，包含初级命令及命令解释",
     "fullDate": "2025-05-18 23:27:33 +0800"
   },
   {
     "hash": "b19d4d3",
     "author": "Your Name",
-    "date": "2025/5/18",
+    "date": "5/18/2025",
     "message": "feat: 更新工作区配置，调整标签和文件路径，新增VSCode插件开发文档",
     "fullDate": "2025-05-18 19:10:55 +0800"
   },
   {
     "hash": "4aa8193",
     "author": "dingxh-msi",
-    "date": "2025/4/20",
+    "date": "4/20/2025",
     "message": "2025-04-19: 新增《docker run 手册》文档，包含docker命令的基本用法和参数说明",
     "fullDate": "2025-04-20 15:57:27 +0800"
   },
   {
     "hash": "dd51de4",
     "author": "dingxh-msi",
-    "date": "2025/4/13",
+    "date": "4/13/2025",
     "message": "2025-04-06: 更新《Antlr4 python 使用》文档，新增分析表的数据库记录结构及相关字段说明",
     "fullDate": "2025-04-13 22:09:48 +0800"
   },
   {
     "hash": "caaff4a",
     "author": "dingxh-msi",
-    "date": "2025/4/6",
+    "date": "4/6/2025",
     "message": "2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍",
     "fullDate": "2025-04-06 23:28:32 +0800"
   },
   {
     "hash": "8d8579a",
     "author": "dingxh-msi",
-    "date": "2025/4/6",
+    "date": "4/6/2025",
     "message": "2025-04-06: 更新《Obsidian 使用》文档，新增关于图片格式和位置调整的说明，并添加相关图片。",
     "fullDate": "2025-04-06 15:47:31 +0800"
   },
   {
     "hash": "239cffb",
     "author": "dingxh-msi",
-    "date": "2025/4/6",
+    "date": "4/6/2025",
     "message": "2025-04-05: 新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置，补充GOPATH和GOMODCACHE的对比说明",
     "fullDate": "2025-04-06 15:27:43 +0800"
   },
   {
     "hash": "7bde38c",
     "author": "dingxh-msi",
-    "date": "2025/4/5",
+    "date": "4/4/2025",
     "message": "2025-04-05: 更新《Golang 离线使用》文档，新增VSCode设置部分并添加相关图片",
     "fullDate": "2025-04-05 01:21:48 +0800"
   },
   {
     "hash": "2a5a2e2",
     "author": "dingxh-msi",
-    "date": "2025/4/5",
+    "date": "4/4/2025",
     "message": "2025-04-04: 更新文档标题，调整《第一课 前提简介》和《第二课 Tasks 使用》的标题格式",
     "fullDate": "2025-04-05 00:59:03 +0800"
   },
   {
     "hash": "abea353",
     "author": "dingxh-msi",
-    "date": "2025/4/5",
+    "date": "4/4/2025",
     "message": "2025-04-04: 新增文档《Vscode 字体-中文英文等宽》，推荐字体并提供相关链接；新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置；更新 commits.json，记录最近提交信息；新增两张图片。",
     "fullDate": "2025-04-05 00:56:32 +0800"
   },
   {
     "hash": "9b3e95d",
     "author": "dingxh-msi",
-    "date": "2025/4/4",
+    "date": "4/4/2025",
     "message": "更新主题和工作区配置，修改 CSS 主题为 Typewriter，新增附件文件夹路径和相对链接格式，调整工作区 ID 和最近打开文件",
     "fullDate": "2025-04-04 10:25:19 +0800"
   },
   {
     "hash": "3c269cc",
     "author": "Your Name",
-    "date": "2025/4/3",
+    "date": "4/3/2025",
     "message": "新增文档，创建 Powershell 基础使用指南，记录常见问题及解决方案",
     "fullDate": "2025-04-03 18:41:43 +0800"
   },
   {
     "hash": "e031568",
     "author": "Your Name",
-    "date": "2025/3/29",
+    "date": "3/29/2025",
     "message": "更新文档，新增 VSCode 插件开发学习-第二课，调整 Go 环境配置示例，增强可读性",
     "fullDate": "2025-03-29 12:00:26 +0800"
   },
   {
     "hash": "43eca2a",
     "author": "Your Name",
-    "date": "2025/3/25",
+    "date": "3/25/2025",
     "message": "更新文档，新增 Golang 离线使用手册，调整 Obsidian 配置和工作区设置",
     "fullDate": "2025-03-25 18:41:42 +0800"
   },
   {
     "hash": "c5e9175",
     "author": "dingxh-msi",
-    "date": "2025/3/24",
+    "date": "3/24/2025",
     "message": "更新文档，新增 VSCode 插件开发学习-第一课，调整工作区配置，更新文件路径和查询条件",
     "fullDate": "2025-03-24 23:17:21 +0800"
   },
   {
     "hash": "201aba4",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "更新文档，新增关于页面和变更日志，调整导航链接，删除过时的时间线文档",
     "fullDate": "2025-02-27 23:11:54 +0800"
   },
   {
     "hash": "62ca90a",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "更新 python3 基础学习文档，调整标题格式，增强可读性",
     "fullDate": "2025-02-27 22:42:37 +0800"
   },
   {
     "hash": "efdece7",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "修正文档，更新 ASP.NET 身份管理解决方案的内容格式，增强可读性",
     "fullDate": "2025-02-27 22:37:36 +0800"
   },
   {
     "hash": "1d6bd8e",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "修正文档，删除不必要的内容以提高可读性",
     "fullDate": "2025-02-27 22:36:36 +0800"
   },
   {
     "hash": "9a4ef80",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "修正文档中的链接，更新为相对路径以提高可访问性",
     "fullDate": "2025-02-27 22:35:26 +0800"
   },
   {
     "hash": "96ec297",
     "author": "dingxh-msi",
-    "date": "2025/2/27",
+    "date": "2/27/2025",
     "message": "更新文档，新增多个技术博客文章，调整标签页布局，修改示例页面标题，删除过时文档",
     "fullDate": "2025-02-27 22:32:16 +0800"
   },
   {
     "hash": "ae84be3",
     "author": "dingxh-msi",
-    "date": "2025/2/26",
+    "date": "2/26/2025",
     "message": "迁移部分历史文档。新增多篇技术博客文章，涵盖主题包括类别与类型的区别、CSS 用户代理样式表、Fedora Samba 端口设置、GitHub 同步错误解决、正则表达式先行断言与后行断言、ASP.NET 身份管理解决方案等",
     "fullDate": "2025-02-26 22:52:45 +0800"
   },
   {
     "hash": "cba459c",
     "author": "dingxh-msi",
-    "date": "2025/2/23",
+    "date": "2/22/2025",
     "message": "新增【vitepress 增加标签功能】",
     "fullDate": "2025-02-23 00:40:31 +0800"
   },
   {
     "hash": "ed517e5",
     "author": "dingxh-msi",
-    "date": "2025/2/23",
+    "date": "2/22/2025",
     "message": "更新文档标题和元数据，添加示例页面的标题信息",
     "fullDate": "2025-02-23 00:39:42 +0800"
   },
   {
     "hash": "7e1be86",
     "author": "dingxh-msi",
-    "date": "2025/2/23",
+    "date": "2/22/2025",
     "message": "新增标签页，支持在导航中访问标签页面",
     "fullDate": "2025-02-23 00:38:49 +0800"
   },
   {
     "hash": "330b318",
     "author": "dingxh-msi",
-    "date": "2025/2/23",
+    "date": "2/22/2025",
     "message": "新增标签页组件，支持按标签过滤文章",
     "fullDate": "2025-02-23 00:38:25 +0800"
   },
   {
     "hash": "0f6992f",
     "author": "dingxh-msi",
-    "date": "2025/2/20",
+    "date": "2/19/2025",
     "message": "新增 python3 基础学习文档，更新 Antlr4 学习内容",
     "fullDate": "2025-02-20 00:34:20 +0800"
   },
   {
     "hash": "2d7cdd2",
     "author": "Your Name",
-    "date": "2025/2/16",
+    "date": "2/16/2025",
     "message": "20250216 新增【Antlr4 python 使用】",
     "fullDate": "2025-02-16 23:07:18 +0800"
   },
   {
     "hash": "37c917c",
     "author": "dingxh-msi",
-    "date": "2025/2/9",
+    "date": "2/9/2025",
     "message": "update vitepress 时间轴组件 用于展示git提交信息",
     "fullDate": "2025-02-09 23:05:53 +0800"
   },
   {
     "hash": "7208a1d",
     "author": "dingxh-msi",
-    "date": "2025/2/9",
+    "date": "2/9/2025",
     "message": "20250209 新增【vitepress 时间轴组件 用于展示git提交信息】",
     "fullDate": "2025-02-09 22:54:07 +0800"
   },
   {
     "hash": "293ccde",
     "author": "dingxh-msi",
-    "date": "2025/2/9",
+    "date": "2/8/2025",
     "message": "20250209 注册自定义全局组件-Git提交记录时间轴组件。根据git提交记录自动生成；替换原来的手写时间轴",
     "fullDate": "2025-02-09 01:11:37 +0800"
   },
   {
     "hash": "ae2719f",
     "author": "dingxh-msi",
-    "date": "2025/2/4",
+    "date": "2/4/2025",
     "message": " 20250204 \t+ 调整使用 Obsidian 写文档，docs可以直接在软件中写 \t+ 增加文章【个人博客系统的想法】",
     "fullDate": "2025-02-04 18:57:01 +0800"
   },
   {
     "hash": "febc84a",
     "author": "dingxh-msi",
-    "date": "2025/1/18",
+    "date": "1/18/2025",
     "message": "增加文章【Vue3 使用 mockjs 模拟api数据】",
     "fullDate": "2025-01-18 23:45:59 +0800"
   },
   {
     "hash": "bb99cc2",
     "author": "dingxh-msi",
-    "date": "2025/1/18",
+    "date": "1/18/2025",
     "message": "为文章增加标签",
     "fullDate": "2025-01-18 15:39:53 +0800"
   },
   {
     "hash": "b78a368",
     "author": "livebug",
-    "date": "2025/1/12",
+    "date": "1/12/2025",
     "message": "Update deploy.yml",
     "fullDate": "2025-01-12 18:52:14 +0800"
   },
   {
     "hash": "85c07ec",
     "author": "dingxh-msi",
-    "date": "2025/1/12",
+    "date": "1/12/2025",
     "message": "20250112 搭建自动化发布、调整outline展示层级",
     "fullDate": "2025-01-12 18:50:35 +0800"
   },
   {
     "hash": "1fd95e5",
     "author": "dingxh-msi",
-    "date": "2025/1/12",
+    "date": "1/12/2025",
     "message": "2020112 增加自动部署流程ACTION",
     "fullDate": "2025-01-12 17:38:11 +0800"
   },
   {
     "hash": "58ffec6",
     "author": "dingxh-msi",
-    "date": "2025/1/11",
+    "date": "1/11/2025",
     "message": "2025011 两篇文章     - learn 【VitePress Sidebar 动态侧边栏插件】学习使用     - note 【本网站版本记录】  以后对网站调整修订记录",
     "fullDate": "2025-01-11 23:44:47 +0800"
   },
   {
     "hash": "77ceb54",
     "author": "dingxh-msi",
-    "date": "2025/1/11",
+    "date": "1/11/2025",
     "message": "2025011 建立初始化网站     初始化，准备内容主题",
     "fullDate": "2025-01-11 23:44:20 +0800"
   }

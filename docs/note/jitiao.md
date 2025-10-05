@@ -1,5 +1,5 @@
 ---
-title : 'jitiao'
+title : '随机鸡条'
 layout: home
 
 sidebar: false
