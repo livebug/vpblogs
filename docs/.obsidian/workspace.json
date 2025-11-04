@@ -4,25 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "25bba0adf1413aec",
+        "id": "17f069a18af6cc87",
         "type": "tabs",
         "children": [
           {
-            "id": "6b391f4430fac662",
+            "id": "9e854224c6465b42",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "learn/VSCodeEx/2025-05-04-vscode-ex03.md",
+                "file": "learn/Antlr4/2023-10-08-antlr-base.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-05-04-vscode-ex03"
+              "title": "2023-10-08-antlr-base"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -79,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 379.5085258483887
+    "width": 405.5026054382324
   },
   "right": {
     "id": "06ba0f5a017006aa",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "think/开发工具箱/20250420-livebug.dev-001.md.md",
+                "file": "learn/Antlr4/2023-10-08-antlr-base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "20250420-livebug.dev-001.md 的反向链接列表"
+              "title": "2023-10-08-antlr-base 的反向链接列表"
             }
           },
           {
@@ -114,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "learn/Antlr4/2023-10-08-antlr-base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "2023-10-08-antlr-base 的出链列表"
             }
           },
           {
@@ -128,8 +128,8 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
+                "useHierarchy": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "learn/VSCodeEx/2025-05-04-vscode-ex03.md",
+                "file": "learn/Antlr4/2023-10-08-antlr-base.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-05-04-vscode-ex03 的大纲"
+              "title": "2023-10-08-antlr-base 的大纲"
             }
           }
         ],
@@ -156,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +170,23 @@
       "publish:发布更改": false
     }
   },
-  "active": "6b391f4430fac662",
+  "active": "9e854224c6465b42",
   "lastOpenFiles": [
+    "learn/Antlr4/2025-05-03-antlr4-sql-go.md",
+    "learn/Antlr4/2023-10-08-antlr-base.md",
+    "未命名.canvas",
+    "learn/Docker/2025-04-19-docker-run-usage.md",
+    "learn/Docker/2025-05-25-docker-mirrors.md",
+    "learn/Docker/2025-10-25-docker-apachehive.md",
+    "public/images/Pasted image 20251025151459.png",
+    "public/images/Pasted image 20251025151429.png",
+    "learn/Docker/2025-05-18-install-verdaccio.md",
+    "note/index.md",
+    "learn/NodeJs/2025-07-24-package.md",
+    "learn/NodeJs",
+    "learn/2023-08-27-ssh-connect.md",
+    "learn/2023-04-26-fedora-install-docker.md",
+    "2025-10-22.md",
     "learn/VSCodeEx/2025-05-04-vscode-ex03.md",
     "learn/离线使用手册/2025-03-25-go-goproxy.md",
     "learn/VSCodeEx/2025-03-27-vscode-tasks.md",
@@ -188,9 +204,7 @@
     "learn/vitepress/2025-02-22_vitepress_addtagspage.md",
     "learn/vitepress/2025-02-09_vitepress_customcomp_timeline.md",
     "learn/vitepress",
-    "learn/Antlr4/2023-10-08-antlr-base.md",
     "learn/Antlr4",
-    "未命名.canvas",
     "public/images/Pasted image 20250405011100.png",
     "public/images/Pasted image 20250404123258.png",
     "public/images/Pasted image 20250404122700.png",

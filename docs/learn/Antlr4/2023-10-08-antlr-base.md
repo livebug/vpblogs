@@ -1,11 +1,9 @@
 ---
-title : ' Antlr4 基础介绍'
-date : 2023-10-04T09:13:17+08:00
+title: " Antlr4 基础介绍"
+date: 2023-10-04T09:13:17+08:00
 toc: true
-# draft : true
-tags :
-- antlr4
-
+tags:
+  - antlr4
 ---
 # Antlr4 基础介绍
 

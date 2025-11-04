@@ -4,7 +4,7 @@
         <hr />
         <div class="tags">
             <span v-for="tag in uniqueTags" :key="tag" @click="filterByTag(tag)" class="tag">
-                {{ tag }}
+                {{ tag.toLocaleLowerCase() }}
             </span>
         </div>
         <div class="posts">
@@ -66,9 +66,10 @@ function filterByTag(tag) {
 .container {
     margin: 40px auto;
     padding: 32px 24px;
-    background: #c0bfbf;
+    background: var(--vp-c-bg-soft);
     border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(60, 60, 60, 0.08);
+    box-shadow: var(--vp-shadow-1);
+    border: 1px solid var(--vp-c-border);
 }
 
 .tags {
@@ -80,23 +81,25 @@ function filterByTag(tag) {
 }
 
 .tag {
-    background: #42b883;
-    color: #fff;
-    border-radius: 16px;
-    padding: 6px 16px;
-    font-size: 0.98em;
+    background: var(--vp-button);
+    color: var(--vp-c-text-1);
+    border-radius: 10px;
+    padding: 0px 6px;
+    font-size: 1em;
     margin: 0;
     cursor: pointer;
-    transition: background 0.2s, transform 0.2s;
-    box-shadow: 0 1px 4px rgba(66, 184, 131, 0.08);
+    transition: background 0.2s, transform 0.1s, color 0.2s;
+    box-shadow: var(--vp-shadow-1);
     user-select: none;
+    border: 1px solid var(--vp-c-brand);
 }
 
 .tag:hover,
 .tag.active {
-    background: #35495e;
-    color: #fff;
+    background: var(--vp-c-brand);
+    color: var(--vp-c-white);
     transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--vp-shadow-2);
 }
 
 .posts {
@@ -107,16 +110,17 @@ function filterByTag(tag) {
     margin-bottom: 20px;
     list-style: none;
     padding: 18px 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--vp-c-border);
     border-radius: 8px;
-    background: #f8fafc;
-    transition: box-shadow 0.2s, background 0.2s;
-    box-shadow: 0 1px 6px rgba(60, 60, 60, 0.04);
+    background: var(--vp-c-bg-soft);
+    transition: box-shadow 0.2s, background 0.2s, border-color 0.2s;
+    box-shadow: var(--vp-shadow-1);
 }
 
 .posts .post:hover {
-    box-shadow: 0 4px 16px rgba(60, 60, 60, 0.10);
-    background: #f3f7fa;
+    box-shadow: var(--vp-shadow-2);
+    background: var(--vp-c-bg-soft-up);
+    border-color: var(--vp-c-brand);
 }
 
 .post-content {
@@ -128,20 +132,20 @@ function filterByTag(tag) {
 .post-title {
     font-weight: 600;
     font-size: 1.13em;
-    color: #42b883;
+    color: var(--vp-c-brand);
     text-decoration: none;
     margin-bottom: 2px;
     transition: color 0.2s;
 }
 
 .post-title:hover {
-    color: #35495e;
+    color: var(--vp-c-brand-dark);
     text-decoration: underline;
 }
 
 .post-meta {
     font-size: 0.85em;
-    color: #888;
+    color: var(--vp-c-text-2);
     margin-bottom: 4px;
 }
 
@@ -152,17 +156,19 @@ function filterByTag(tag) {
 }
 
 .post-tag {
-    background: #e0f5ef;
-    color: #42b883;
+    background: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand);
     border-radius: 10px;
     padding: 2px 10px;
-    font-size: 0.85em;
-    margin: 0;
+    margin-right: 4px;
+    font-size: 0.65em;
     transition: background 0.2s, color 0.2s;
+    border: 1px solid var(--vp-c-brand-soft);
 }
 
 .post-tag:hover {
-    background: #42b883;
-    color: #fff;
+    background: var(--vp-c-brand);
+    color: var(--vp-c-white);
+    border-color: var(--vp-c-brand);
 }
 </style>
