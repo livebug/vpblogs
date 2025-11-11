@@ -17,7 +17,7 @@ docker run -d -p 10000:10000 -p 10002:10002 --env SERVICE_NAME=hiveserver2 --nam
 
 ## 连接测试
 
-### [HiveServer2](http://localhost:10002/)
+### HiveServer2 
 
 在浏览器中访问 http://localhost:10002/
 ![](../../public/images/Pasted%20image%2020251025151429.png)
