@@ -1,5 +1,26 @@
 [
   {
+    "hash": "eede1e3",
+    "author": "livebug",
+    "date": "2026/3/29",
+    "message": "新增文档标签，优化各个文档的分类和检索功能",
+    "fullDate": "2026-03-29 17:25:57 +0800"
+  },
+  {
+    "hash": "4f05c0f",
+    "author": "livebug",
+    "date": "2026/3/29",
+    "message": "Add various documentation files for development environment setup and usage",
+    "fullDate": "2026-03-29 17:22:28 +0800"
+  },
+  {
+    "hash": "8d53729",
+    "author": "livebug",
+    "date": "2026/3/29",
+    "message": "新增 Linux 编程开发环境初始化文档，包含 sudo 权限管理和软件安装指南",
+    "fullDate": "2026-03-29 17:03:00 +0800"
+  },
+  {
     "hash": "40f8aa3",
     "author": "dingxh-xiaoxin",
     "date": "2025/11/5",
