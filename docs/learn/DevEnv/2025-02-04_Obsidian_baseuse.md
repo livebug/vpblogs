@@ -14,4 +14,4 @@ git插件不好用
 
 ### 调整图片的格式和位置
 
-![](../public/images/Pasted%20image%2020250406153104.png)
+![](../../public/images/Pasted%20image%2020250406153104.png)
