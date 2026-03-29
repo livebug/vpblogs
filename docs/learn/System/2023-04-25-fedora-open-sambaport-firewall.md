@@ -3,6 +3,7 @@ title: fedora打开Samba端口
 date: 2023-04-25 10:36:21
 toc: true
 tags:
+- System
 - fedora
 - linux
 - samba

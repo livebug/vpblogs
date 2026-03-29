@@ -3,6 +3,7 @@ title: wsl环境初始化-安装nvm
 date: 2023-08-27 23:48:19
 toc: true
 tags:
+- DevEnv
 - wsl
 - nvm
 - nodejs

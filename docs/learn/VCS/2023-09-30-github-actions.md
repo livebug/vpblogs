@@ -2,7 +2,7 @@
 title : '使用 Github Actions 自动化发布博客' 
 date : 2023-09-30T13:58:58+08:00
 toc: true
-tags: ["github actions","hugo","github"]
+tags: ["VCS","github actions","hugo","github"]
 
 ---
 

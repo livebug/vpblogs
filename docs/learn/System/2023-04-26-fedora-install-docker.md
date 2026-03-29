@@ -3,6 +3,7 @@ title: fedora安装docker
 date: 2023-04-26 23:38:56
 toc: true
 tags:
+- System
 - docker
 - gauss
 - fedora

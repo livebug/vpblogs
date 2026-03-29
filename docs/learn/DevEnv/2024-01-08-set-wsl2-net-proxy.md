@@ -1,6 +1,7 @@
 ---
 title: WSL2配置代理
 tags:
+  - DevEnv
   - wsl2
   - proxy
 ---

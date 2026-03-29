@@ -1,6 +1,7 @@
 ---
 title: poweshell 基础使用
 tags:
+  - System
   - powershell
 ---
 # Powershell 基础使用

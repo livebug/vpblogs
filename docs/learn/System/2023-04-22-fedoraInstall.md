@@ -3,6 +3,7 @@ title: fedora系统安装后的基本操作
 date: 2023-04-22 16:39:49
 toc: true
 tags:
+- System
 - linux
 - fedora
 

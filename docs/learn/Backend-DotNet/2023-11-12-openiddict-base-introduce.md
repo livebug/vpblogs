@@ -2,7 +2,7 @@
 title : 'Openiddict Base Introduce'
 date : 2023-11-12T09:07:42+08:00
 toc: true
-tags: ['openiddict','C#','asp.net core']
+tags: ['Backend','openiddict','C#','asp.net core']
 
 ---
 # Openiddict Base Introduce
