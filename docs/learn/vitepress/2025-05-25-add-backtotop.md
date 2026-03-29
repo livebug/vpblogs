@@ -1,6 +1,7 @@
 ---
 title: vitepress 增加返回顶部功能
 tags:
+  - Frontend
   - VitePress
   - Vue3
 ---

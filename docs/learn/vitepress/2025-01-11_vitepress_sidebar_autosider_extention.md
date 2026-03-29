@@ -1,6 +1,7 @@
 ---
 title: VitePress 动态侧边栏插件
 tags:
+- Frontend
 - VitePress
 ---
 # VitePress Sidebar 动态侧边栏插件

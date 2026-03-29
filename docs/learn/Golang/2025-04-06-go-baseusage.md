@@ -1,6 +1,7 @@
 ---
 title: go 基础使用
 tags:
+  - Golang
   - go
 ---
 # go 基础使用

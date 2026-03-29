@@ -1,6 +1,7 @@
 ---
 title: docker run 手册
 tags:
+  - Docker
   - docker
 ---
 # docker run 手册

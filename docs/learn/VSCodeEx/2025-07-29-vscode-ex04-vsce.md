@@ -1,6 +1,7 @@
 ---
 title: VSCODE 插件开发第四课-打包
 tags:
+  - DevEnv
   - vscode-extension
 ---
 # VSCODE 插件开发第四课-打包

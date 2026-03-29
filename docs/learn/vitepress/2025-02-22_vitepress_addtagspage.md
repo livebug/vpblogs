@@ -1,6 +1,7 @@
 ---
 title: vitepress 增加标签功能
 tags:
+  - Frontend
   - VitePress
   - Vue3
 ---

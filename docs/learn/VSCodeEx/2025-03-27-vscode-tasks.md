@@ -1,6 +1,7 @@
 ---
 title: 第二课 Tasks 使用
 tags:
+  - DevEnv
   - vscode
   - vscode-extension
 ---

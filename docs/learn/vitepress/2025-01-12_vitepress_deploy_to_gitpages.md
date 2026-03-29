@@ -1,6 +1,7 @@
 ---
 title: vitepress 部署发布到 github pages
 tags:
+  - Frontend
   - VitePress
 ---
 

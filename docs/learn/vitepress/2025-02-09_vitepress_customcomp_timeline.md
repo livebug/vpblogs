@@ -1,6 +1,7 @@
 ---
 title: vitepress 时间轴组件 用于展示git提交信息
 tags:
+  - Frontend
   - VitePress
   - Vue3
 ---

@@ -1,6 +1,7 @@
 ---
 title: snap的docker是如何换源
 tags:
+  - Docker
   - docker
 --- 
 

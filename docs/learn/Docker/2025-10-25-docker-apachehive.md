@@ -1,6 +1,7 @@
 ---
 title: docker 启动hive
 tags:
+  - Docker
   - docker
   - hive
 ---
