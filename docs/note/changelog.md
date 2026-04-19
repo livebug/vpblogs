@@ -1,11 +1,11 @@
 ---
-title: 本网站版本记录
+title: 本网站版本提交记录
 layout: home
 sidebar: false
 aside: false
 ---
 
-# 本网站版本记录
+# 本网站版本提交记录，根据git提交自动生成
 
 <!-- + 2025011 建立初始化网站
     初始化，准备内容主题

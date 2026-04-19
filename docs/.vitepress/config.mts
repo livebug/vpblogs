@@ -20,7 +20,7 @@ const vitePressOptions = {
       { text: 'Home', link: '/' },
       { text: 'About', link: '/note/about' },
       { text: 'Tags', link: '/note/tags' },
-      { text: 'ChangeLog', link: '/note/changelog'}
+      { text: 'Timeline', link: '/note/timeline' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/livebug' }
