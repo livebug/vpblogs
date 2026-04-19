@@ -1,5 +1,19 @@
 [
   {
+    "hash": "2c8f357",
+    "author": "livebug",
+    "date": "2026/4/19",
+    "message": "feat: 优化 Git 时间线组件，增加加载和错误状态处理",
+    "fullDate": "2026-04-19 22:36:44 +0800"
+  },
+  {
+    "hash": "04c47f5",
+    "author": "livebug",
+    "date": "2026/3/29",
+    "message": "新增文档标签和开发环境文档，优化分类和使用指南",
+    "fullDate": "2026-03-29 17:59:52 +0800"
+  },
+  {
     "hash": "eede1e3",
     "author": "livebug",
     "date": "2026/3/29",

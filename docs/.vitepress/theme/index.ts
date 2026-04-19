@@ -6,6 +6,10 @@ import TagsPage from './components/TagsPage.vue'
 import ToTop from './components/ToTop.vue'
 import RangeJt from './components/RangeJt.vue'
 import './custom.css'
+
+// 只需添加以下一行代码，引入时间线样式
+import "vitepress-markdown-timeline/dist/theme/index.css";
+
 import { h } from 'vue'
 
 export default {

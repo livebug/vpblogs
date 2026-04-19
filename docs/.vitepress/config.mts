@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { withSidebar } from 'vitepress-sidebar';
 import { VitePressSidebarOptions } from 'vitepress-sidebar/types';
+import timelinePlugin from 'vitepress-markdown-timeline';
 
 const vitePressOptions = {
   // VitePress's options here...
@@ -8,6 +9,11 @@ const vitePressOptions = {
   title: "Livebug's Space",
   description: "学习、心得、记录、随笔",
   lastUpdated: true,
+  markdown: {
+    config: (md: any) => {
+      md.use(timelinePlugin);
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
