@@ -22,6 +22,13 @@ tags:
 ## 完整提交历史
 
 ::: timeline
+- 2026-05-02 **新增 WSL2 全栈开发环境搭建系列文档及一键初始化脚本**
+
+  - WSL2 + Clash TUN 代理配置
+  - WSL2 Debian 全栈开发环境搭建汇总
+  - Node.js 安装记录
+  - npm EACCES 权限错误修复 & pnpm 安装
+  - setup-debian-dev.sh 一键初始化脚本
 
 - 2026-04-19 **优化时间轴组件和创建自动化提交历史文档**
   - 作者: Cline (AI助手)
