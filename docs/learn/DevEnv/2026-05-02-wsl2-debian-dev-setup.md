@@ -109,7 +109,7 @@ npm --version    # 10.9.7
 
 ### 详细文档
 
-参见 [WSL2 (Debian Trixie) 安装 Node.js](./2026-05-02-wsl2-nodejs-install.md)
+参见 [WSL2 (Debian Trixie) 安装 Node.js](../NodeJs/2026-05-02-wsl2-nodejs-install.md)
 
 ## 四、Java (OpenJDK 21 LTS)
 
@@ -248,7 +248,7 @@ chmod +x setup-debian-dev.sh
 bash setup-debian-dev.sh
 ```
 
-> 脚本源码参见项目 `scripts/setup-debian-dev.sh`，可直接下载 [setup-debian-dev.sh](/resources/setup-debian-dev.sh)。
+> 脚本源码参见项目 [`scripts/setup-debian-dev.sh`](https://raw.githubusercontent.com/livebug/vpblogs/main/scripts/setup-debian-dev.sh)，可直接下载。
 
 ## 九、维护备忘
 
@@ -265,4 +265,4 @@ bash setup-debian-dev.sh
 
 - [WSL2 + Clash TUN 代理配置](./2026-05-02-wsl2-clash-proxy.md)
 - [Node.js 安装记录](../NodeJs/2026-05-02-wsl2-nodejs-install.md)
-- [初始化脚本下载](/resources/setup-debian-dev.sh)
+- [初始化脚本下载](https://raw.githubusercontent.com/livebug/vpblogs/main/scripts/setup-debian-dev.sh)
