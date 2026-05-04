@@ -4,7 +4,7 @@
 .idea
 .temp
 .vite_opt_cache
-.vscode
+# .vscode
 dist
 cache
 temp
