@@ -22,6 +22,13 @@ tags:
 ## 完整提交历史
 
 ::: timeline
+- 2026-05-02 **新增 WSL2 全栈开发环境搭建系列文档及一键初始化脚本**
+
+  - WSL2 + Clash TUN 代理配置
+  - WSL2 Debian 全栈开发环境搭建汇总
+  - Node.js 安装记录
+  - npm EACCES 权限错误修复 & pnpm 安装
+  - setup-debian-dev.sh 一键初始化脚本
 
 - 2026-04-22 **新增《code-server 使用 HTTPS》文档，详细介绍如何配置 HTTPS 访问和证书管理**
   - 作者: livebug
