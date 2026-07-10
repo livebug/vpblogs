@@ -73,7 +73,7 @@ preflight_check() {
 install_base() {
     log_info "====== [1/6] 安装基础依赖 ======"
     sudo apt update -y
-    sudo apt install -y curl ca-certificates gnupg lsb-release
+    sudo apt install -y curl ca-certificates gnupg lsb-release git
     log_done "基础依赖安装完成"
 }
 
