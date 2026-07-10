@@ -1,3 +1,48 @@
 .full-width-layout .container {
   max-width: 100% !important;
 }
+
+/* 隐藏 hero 原始图片，用自定义 CSS 图标替代 */
+.VPHero .image-src {
+  display: none !important;
+}
+
+/* VPHome 作为图标定位参考 */
+.VPHome {
+  position: relative;
+}
+
+/* 自定义图标 - 绝对定位到 hero 图片区域 */
+.VPHome > .tech-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* 移动端：图标在文字上方居中 */
+@media (max-width: 959px) {
+  .VPHome > .tech-icon {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .VPHome > .tech-icon .tech-icon-inner {
+    margin: 0 auto;
+  }
+}
+
+/* 桌面端：图标在右侧 */
+@media (min-width: 960px) {
+  .VPHome > .tech-icon {
+    width: 35%;
+    height: 100%;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

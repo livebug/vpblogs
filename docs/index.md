@@ -8,7 +8,7 @@ hero:
   tagline: 雄关漫道真如铁，而今迈步从头越
   image:
     src: /images/hero.jpg
-    alt: VitePress
+    alt: Livebug
   actions:
     - theme: alt
       text: 学习

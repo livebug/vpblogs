@@ -5,6 +5,7 @@ import GitTimeline from './components/GitTimeline.vue'
 import TagsPage from './components/TagsPage.vue'
 import ToTop from './components/ToTop.vue'
 import RangeJt from './components/RangeJt.vue'
+import HeroIcon from './components/HeroIcon.vue'
 import './custom.css'
 
 // 只需添加以下一行代码，引入时间线样式
@@ -16,7 +17,8 @@ export default {
   extends: DefaultTheme,
   Layout() {
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(ToTop) // 注入到底部插槽
+      'layout-bottom': () => h(ToTop), // 注入到底部插槽
+      'home-hero-before': () => h(HeroIcon) // 替换首页 Hero 图片
     })
   },
   enhanceApp({ app }) {
