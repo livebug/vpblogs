@@ -1,6 +1,8 @@
 // .vitepress/theme/index.ts
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import { useData } from 'vitepress'
+import { createMermaidRenderer } from 'vitepress-mermaid-renderer'
 import GitTimeline from './components/GitTimeline.vue'
 import TagsPage from './components/TagsPage.vue'
 import ToTop from './components/ToTop.vue'
@@ -11,11 +13,22 @@ import './custom.css'
 // 只需添加以下一行代码，引入时间线样式
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
-import { h } from 'vue'
+import { h, nextTick, watch } from 'vue'
 
 export default {
   extends: DefaultTheme,
   Layout() {
+    const { isDark } = useData()
+
+    const initMermaid = () => {
+      createMermaidRenderer({
+        theme: isDark.value ? 'dark' : 'default',
+      })
+    }
+
+    nextTick(() => initMermaid())
+    watch(() => isDark.value, () => initMermaid())
+
     return h(DefaultTheme.Layout, null, {
       'layout-bottom': () => h(ToTop), // 注入到底部插槽
       'home-hero-before': () => h(HeroIcon) // 替换首页 Hero 图片

@@ -2,6 +2,29 @@
   max-width: 100% !important;
 }
 
+/* ========== Mermaid 图表尺寸约束 ========== */
+/* 限制图表最大宽度，适配内容区域 */
+.vp-doc .mermaid-wrapper,
+.vp-doc [class*="mermaid"] {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* 图表容器内的 SVG 限制最大宽度 */
+.vp-doc .mermaid-wrapper svg,
+.vp-doc [class*="mermaid"] svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 移动端进一步缩小 */
+@media (max-width: 639px) {
+  .vp-doc [class*="mermaid"] svg {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
+
 /* 隐藏 hero 原始图片，用自定义 CSS 图标替代 */
 .VPHero .image-src {
   display: none !important;

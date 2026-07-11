@@ -3,6 +3,7 @@ import { withSidebar } from 'vitepress-sidebar';
 import { VitePressSidebarOptions } from 'vitepress-sidebar/types';
 import timelinePlugin from 'vitepress-markdown-timeline';
 
+
 const vitePressOptions = {
   // VitePress's options here...
   base: '/vpblogs/',
@@ -13,6 +14,8 @@ const vitePressOptions = {
     config: (md: any) => {
       md.use(timelinePlugin);
     }
+  },
+  vite: { 
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -86,4 +89,5 @@ const vitePressSidebarOptions_: VitePressSidebarOptions[] = [...f1(),
 ];
 
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig(withSidebar(vitePressOptions, vitePressSidebarOptions_))

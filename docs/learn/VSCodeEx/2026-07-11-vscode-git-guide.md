@@ -54,15 +54,15 @@ gitGraph
    checkout fb_new_table
    commit id: "新增目标表抽取"
    commit id: "加数据质量校验"
-   checkout master
+   checkout main
    branch fb_fix_date
    checkout fb_fix_date
    commit id: "修复日期格式"
-   checkout master
+   checkout main
    merge fb_fix_date
    checkout fb_new_table
    commit id: "加异常处理"
-   checkout master
+   checkout main
    merge fb_new_table
    commit id: "15号 版本发布"
 ```
@@ -74,7 +74,8 @@ gitGraph
 | `master` | 生产环境正在运行的脚本，**只在版本发布日更新** |
 | `fb_xxx` | 功能分支，命名如 `fb_new_cust_sync`，从 master 检出 |
 | `dev` | 代码审查分支，fb_xxx 通过 PR 合入，用于 Code Review |
-| `release` | 准生产分支，UAT 测试通过的 fb_xxx 合入这里 |
+| `uat` | UAT 测试分支，由发版人从 dev 部署，测试人员在此验证 |
+| `release` | 准生产分支，uat 测试全部通过后合入到这里 |
 | `HEAD` | 指针，指向你当前所在的分支/提交 |
 
 ---
@@ -122,31 +123,33 @@ gitGraph
 ### 3.1 分支全景图
 
 ```mermaid
-flowchart TD
-    subgraph "永久分支"
-        M["master<br/>🔴 生产环境<br/>只在版本日更新"]
-        D["dev<br/>🟡 代码审查<br/>日常活跃"]
-        R["release<br/>🟠 准生产<br/>版本日前夕活跃"]
-    end
-    subgraph "临时分支（按需创建，用完删除）"
-        FB1["fb_new_cust<br/>新客统计脚本"]
-        FB2["fb_fix_date<br/>修复日期格式"]
-        FB3["fb_add_check<br/>加数据质量校验"]
-    end
-    UAT["🔵 UAT 测试环境"]
-    FB1 -->|"PR 合并"| D
-    FB2 -->|"PR 合并"| D
-    FB3 -->|"PR 合并"| D
-    M -->|"从 master 检出"| FB1
-    M -->|"从 master 检出"| FB2
-    M -->|"从 master 检出"| FB3
-    FB1 -.->|"Push 自动部署"| UAT
-    FB2 -.->|"Push 自动部署"| UAT
-    FB3 -.->|"Push 自动部署"| UAT
-    FB1 -->|"UAT 通过后合入"| R
-    FB2 -->|"UAT 通过后合入"| R
-    FB3 -->|"UAT 通过后合入"| R
-    R -->|"版本日合并"| M
+flowchart LR
+    %% ═══ 分支节点定义 ═══
+    M["🏭 master<br/><i>生产环境</i>"]
+    FB["🌿 fb_xxx<br/><i>你的开发分支</i>"]
+    D("📋 dev<br/><i>代码审查</i>")
+    U("🧪 uat<br/><i>UAT 测试</i>")
+    R("🚦 release<br/><i>准生产验证</i>")
+
+    %% ═══ 流转关系 ═══
+    M -- "① 从 master 检出" --> FB
+    FB -- "② 双人评审 + PR 合并<br/>→ 开发完成" --> D
+    FB -. "③ 测试发版人部署 fb→uat" .-> U
+    U -- "④ 测试通过 + 评审批准" --> R
+    R -- "⑤ 版本日发版" --> M
+
+    %% ═══ 样式 ═══
+    classDef prod fill:#ff444420,stroke:#ff4444,stroke-width:2px,color:#ff6666
+    classDef fb   fill:#4fc08d20,stroke:#4fc08d,stroke-width:2px,color:#4fc08d
+    classDef dev  fill:#e6a23c20,stroke:#e6a23c,stroke-width:2px,color:#e6a23c
+    classDef uat  fill:#409eff20,stroke:#409eff,stroke-width:2px,color:#409eff
+    classDef rel  fill:#f56c6c20,stroke:#f56c6c,stroke-width:2px,color:#f56c6c
+
+    class M prod
+    class FB fb
+    class D dev
+    class U uat
+    class R rel
 ```
 
 ### 3.2 各分支职责
@@ -155,7 +158,8 @@ flowchart TD
 |------|------|--------|----------|
 | `master` | 生产运行脚本 | 发版负责人 | **仅在版本日**（15/24/29）|
 | `dev` | 代码审查，fb_xxx 通过 PR 合入 | 开发者提 PR | 日常，每个 fb_xxx 完成就合入 |
-| `release` | 准生产，UAT 通过的 fb_xxx 合入，发版前最后防线 | 发版负责人 | 版本日前 1-2 天 |
+| `uat` | UAT 测试分支，测试发版人将 fb_xxx 合并到此，测试人员验证 | 测试发版人部署、测试人验证 | 每次测试发版人部署时更新 |
+| `release` | 准生产，uat 测试通过 + 发版评审批准后合入 | 发版负责人 | 版本日前 1-2 天 |
 | `fb_xxx` | 你的开发分支 | 你 | 从 master 检出，开发完提交 PR 到 dev |
 
 ### 3.3 版本窗口机制
@@ -175,38 +179,51 @@ flowchart TD
 
 1. **master 在非版本日锁定不动**——生产环境稳定第一
 2. 一个版本窗口内，可能有多个 `fb_xxx` 在并行开发
-3. fb_xxx Push 后自动部署到 UAT 测试，同时通过 PR 合入 dev 做代码审查，UAT 通过后由发版负责人批量合入 `release`
-4. 版本日当天，`release` → `master`，完成发版
+3. 开发完成 = 双人代码评审通过后，提交 PR 将 `fb_xxx` 合并到 `dev`
+4. 测试发版人将 `fb_xxx` 合并到 `uat` 分支，测试人员在 `uat` 上验证
+5. UAT 测试通过 **且** 发版评审批准后，发版负责人将 `uat` 合入 `release`（准生产）
+6. 生产发版人员在版本日当天，将 `release` → `master`，完成发版，新一轮开发开始
 
 ### 3.4 完整开发到发版流程
 
 ```mermaid
 sequenceDiagram
     actor 你 as 开发者
+    actor 评审 as 代码评审人（双人）
+    actor 测试发版 as 测试发版人
+    actor 测试 as 测试人员
+    actor 生产发版 as 生产发版人
     participant Master as master
     participant FB as fb_xxx
     participant Dev as dev
-    participant UAT as UAT环境
+    participant Uat as uat
     participant Rel as release
     participant Prod as 生产(master)
 
-    Note over 你,Prod: === 日常开发阶段（版本窗口内） ===
+    Note over 你,Prod: === 日常开发（版本窗口内） ===
     你->>Master: 1. 从 master 检出 fb_new_sql
     你->>FB: 2. 写 SQL、本地语法校验
     你->>FB: 3. Push fb_new_sql 到远程
-    FB->>UAT: 4. 自动部署 fb_xxx 到 UAT 测试
-    Note over UAT: 5. 在 UAT 环境验证数据
-    你->>Dev: 6. UAT 通过后创建 PR: fb_new_sql → dev
-    Note over Dev: 7. 同事 Review、讨论
-    Dev->>Dev: 8. 合并 PR 到 dev
+    你->>Dev: 4. 创建 PR: fb_new_sql → dev
+    评审->>Dev: 5. 双人代码评审
+    Note over Dev: 6. 评审通过，合并 PR 到 dev（开发完成 ✅）
 
-    Note over 你,Prod: === 版本窗口关闭前（如 14日/23日/28日） ===
-    你->>Rel: 9. UAT 通过的 fb_xxx 合入 release（准生产）
-    Note over Rel: 10. 准生产环境最终验证
+    Note over 你,Prod: === UAT 测试阶段 ===
+    测试发版->>Uat: 7. 将 fb_xxx 合并到 uat 分支
+    测试->>Uat: 8. 在 uat 分支执行测试用例
+    Note over 测试: 9. 验证数据准确性、性能等
+    测试-->>测试发版: 10. ✅ 测试通过，提交测试报告
 
-    Note over 你,Prod: === 版本日（15日/24日/29日） ===
-    Rel->>Prod: 11. release → master 生产发版
+    Note over 你,Prod: === 准生产发版（版本日前1-2天） ===
+    测试发版->>测试发版: 11. 发起发版评审
+    Note over 测试发版: 12. 评审批准通过
+    测试发版->>Rel: 13. uat 合入 release（准生产）
+    Note over Rel: 14. 准生产最终验证
+
+    Note over 你,Prod: === 版本日（15/24/29） ===
+    生产发版->>Prod: 15. release → master 生产发版
     Note over Prod: ✅ 发版完成，master 再次锁定
+    Note over 你: 🔄 新一轮开发开始，从 master 检出新的 fb_xxx
 ```
 
 ---
@@ -252,8 +269,9 @@ sequenceDiagram
     你->>FB: 2. 从 master 检出 fb_new_cust
     Note over 你: 3. 写 SQL...
     你->>FB: 4. Stage → Commit → Push
-    你->>Dev: 5. 在 GitLab 提交 PR 到 dev
-    Note over Dev: 6. 等待 Review 与合并
+    你->>Dev: 5. 创建 PR 到 dev
+    评审->>Dev: 6. 双人代码评审
+    Note over Dev: 7. 评审通过，合并 PR<br/>开发完成 ✅
 ```
 
 ### 5.2 创建开发分支
@@ -336,21 +354,19 @@ feat: dws层 - 新增客户30日留存统计脚本
 sequenceDiagram
     actor 你 as 开发者
     participant GL as GitLab
-    participant UAT as UAT环境
     actor 同事 as Reviewer
 
     你->>GL: 1. Push fb_new_cust 到远程
-    GL->>UAT: 2. 自动部署 fb_new_cust 到 UAT
-    Note over UAT: 3. 在 UAT 验证 SQL 结果
-    你->>GL: 4. UAT 通过后创建 PR: fb_new_cust → dev
-    Note over 你: 写明：改了哪些 SQL<br/>依赖关系、UAT 测试结果
-    GL->>同事: 5. 通知 Review
-    同事->>GL: 6. 查看 SQL 变更 (Diff)
-    同事->>GL: 7. 评论 / 建议修改
-    你->>GL: 8. 修改后再次 Push<br/>（PR 自动更新，UAT 自动重新部署）
-    同事->>GL: 9. ✅ 审查通过
-    GL->>GL: 10. 合并到 dev
-    你->>GL: 11. 删除远程 fb_new_cust 分支
+    你->>GL: 2. 创建 PR: fb_new_cust → dev
+    Note over 你: 写明：改了哪些 SQL<br/>依赖关系
+    GL->>同事: 3. 通知 Review
+    同事->>GL: 4. 查看 SQL 变更 (Diff)
+    同事->>GL: 5. 评论 / 建议修改
+    你->>GL: 6. 修改后再次 Push<br/>（PR 自动更新）
+    同事->>GL: 7. ✅ 审查通过
+    GL->>GL: 8. 合并到 dev（开发完成 ✅）
+    Note over 你: 9. fb_new_cust 分支留存<br/>便于后续复查追溯
+    Note over 你: 10. 后续由发版人部署到 uat 测试
 ```
 
 ### 6.2 PR 描述模板
@@ -384,7 +400,7 @@ sequenceDiagram
 | **操作位置** | VS Code 本地 | GitLab 网页 |
 | **代码审查** | 无 | 同事 Review、行级评论 |
 | **合并目标** | 任意分支 | 本仓库固定 `fb_xxx → dev` |
-| **CI 触发** | 无 | Push fb_xxx 自动部署 UAT，PR 合入 dev 自动同步 |
+| **CI 触发** | 无 | PR 合入 dev 后，由发版人部署 uat 进行测试 |
 | **可追溯** | 仅提交记录 | PR 页面永久保存讨论 |
 
 > 🔑 **核心区别：** 在本仓库，你**永远**不直接在本地 merge 到 `dev`。所有合并都通过 GitLab PR，有人 Review 后才能合。
@@ -403,19 +419,19 @@ gantt
     
     section 版本窗口1
     日常开发 fb_xxx→dev    :a1, 01, 13d
-    fb_xxx→release 合入    :a2, 13, 2d
+    uat→release 合入       :a2, 13, 2d
     准生产验证             :a3, 14, 1d
     生产发版 release→master :milestone, a4, 15, 1d
     
     section 版本窗口2
     日常开发 fb_xxx→dev    :b1, 16, 7d
-    fb_xxx→release 合入    :b2, 23, 1d
+    uat→release 合入       :b2, 23, 1d
     准生产验证             :b3, 24, 1d
     生产发版 release→master :milestone, b4, 24, 1d
     
     section 版本窗口3
     日常开发 fb_xxx→dev    :c1, 25, 3d
-    fb_xxx→release 合入    :c2, 28, 1d
+    uat→release 合入       :c2, 28, 1d
     准生产验证             :c3, 29, 1d
     生产发版 release→master :milestone, c4, 29, 1d
 ```
@@ -424,14 +440,17 @@ gantt
 
 ```mermaid
 flowchart TD
-    A["版本日前1-2天<br/>所有 fb_xxx 已通过 UAT 测试<br/>且 PR 已合入 dev"] --> B["发版负责人：<br/>将 UAT 通过的 fb_xxx 合入 release"]
-    B --> C["在 release 分支执行<br/>准生产环境最终验证"]
-    C --> D{"验证通过？"}
-    D -->|"是"| E["版本日当天<br/>release → master"]
-    D -->|"否"| F["修复问题 → Push<br/>→ UAT 重新验证 → 合入 release"]
-    F --> C
-    E --> G["✅ 生产发版完成<br/>master 再次锁定"]
-    G --> H["打 Tag 标记版本号<br/>如: v2026.07.15"]
+    A["版本日前1-2天<br/>所有 fb_xxx 已合入 dev<br/>且 UAT 测试已通过"] --> B["发版负责人：<br/>发起发版评审"]
+    B --> C{"评审批准？"}
+    C -->|"通过"| D["将 uat 分支合入 release<br/>准生产环境最终验证"]
+    C -->|"驳回"| E["补充材料 / 修复问题<br/>重新提交评审"]
+    E --> B
+    D --> F{"验证通过？"}
+    F -->|"是"| G["版本日当天<br/>release → master"]
+    F -->|"否"| H["修复问题 → 重新部署 uat<br/>→ 测试通过 → 评审 → release"]
+    H --> B
+    G --> I["✅ 生产发版完成<br/>master 再次锁定"]
+    I --> J["打 Tag 标记版本号<br/>如: v2026.07.15"]
 ```
 
 ### 7.3 开发者在发版日前后要注意什么
@@ -457,7 +476,7 @@ flowchart TD
 | **漏了文件** | 先暂存漏掉的 SQL → 再执行 Amend |
 | **已 Push 到远程** | Amend 后 `Git: Push (Force)` ⚠️ |
 
-> ⚠️ **Force Push 只在你自己一个人的 fb_xxx 分支上用！** 绝对不要对 `dev`、`release`、`master` 用！
+> ⚠️ **Force Push 只在你自己一个人的 fb_xxx 分支上用！** 绝对不要对 `dev`、`uat`、`release`、`master` 用！
 
 ---
 
@@ -748,7 +767,7 @@ flowchart TD
 
 ### 14.1 每日核心口诀
 
-> **Master 检出 → fb_xxx 开发 → Push → UAT 自动部署测试 → PR 到 dev → Review → 合入 dev → 等版本日 fb_xxx 合入 release → 发版 master**
+> **Master 检出 → fb_xxx 开发 → Push → 双人评审 → PR 合入 dev（开发完成）→ 测试发版人 fb→uat → 测试验证 → 发版评审批准 → uat 合入 release → 生产发版 release→master → 新一轮开发**
 
 ### 14.2 整体流程图
 
@@ -757,30 +776,34 @@ flowchart TD
     subgraph "日常开发（版本窗口内）"
         A["从 master 检出 fb_xxx"] --> B["写 SQL、本地测试"]
         B --> C["Stage → Commit → Push"]
-        C --> D["自动部署 UAT 测试"]
-        D --> E["UAT 验证通过"]
-        E --> F["GitLab 创建 PR → dev"]
-        F --> G["同事 Review"]
-        G --> H{"通过？"}
-        H -->|"否"| B
-        H -->|"是"| I["合入 dev"]
+        C --> D["GitLab 创建 PR → dev"]
+        D --> E["双人代码评审"]
+        E --> F{"通过？"}
+        F -->|"否"| B
+        F -->|"是"| G["合入 dev ✅ 开发完成"]
     end
     
-    subgraph "发版前（版本日前1-2天）"
-        I --> J["所有 fb_xxx 已通过 UAT + dev"]
-        J --> K["fb_xxx 合入 release（准生产）"]
-        K --> L["准生产最终验证"]
-        L --> M{"通过？"}
-        M -->|"否"| N["修复 → Push → UAT → release"]
-        N --> L
+    subgraph "UAT 测试阶段"
+        G --> H["测试发版人 fb→uat"]
+        H --> I["测试人员验证"]
+        I --> J{"测试通过？"}
+        J -->|"否"| K["修复 → 重新部署"]
+        K --> H
+    end
+    
+    subgraph "准生产发版（版本日前1-2天）"
+        J -->|"是"| L["发起发版评审"]
+        L --> M{"评审批准？"}
+        M -->|"驳回"| K
+        M -->|"通过"| N["uat 合入 release（准生产）"]
+        N --> O["准生产最终验证"]
     end
     
     subgraph "版本日（15/24/29）"
-        M -->|"是"| O["release → master"]
-        O --> P["🎉 生产发版完成"]
-        P --> Q["打 Tag 标记版本"]
-    end
-```
+        O --> P["release → master"]
+        P --> Q["🎉 生产发版完成"]
+        Q --> R["打 Tag 标记版本"]
+        R --> A
     end
 ```
 
@@ -789,8 +812,9 @@ flowchart TD
 | 分支 | 一句话 |
 |------|--------|
 | **master** | 生产的镜子，非版本日碰都别碰 |
-| **fb_xxx** | 你的工作台，从 master 来，往 dev 去 |
-| **dev** | 大家的试验田，通过 PR 合入 |
+| **fb_xxx** | 你的工作台，从 master 来，PR 合入 dev 即开发完成 |
+| **dev** | 代码审查站，通过 PR 合入，发版人从这里部署 uat |
+| **uat** | 测试练兵场，发版人部署、测试人验证，通过 + 评审后进 release |
 | **release** | 发版前的最后一道安检 |
 
 ### 14.4 最核心的几条铁律
@@ -801,4 +825,4 @@ flowchart TD
 4. **每天同步 dev**到你的 fb_xxx，减少最终冲突
 5. **一个 fb_xxx 只做一件事**，方便 Review 和回退
 6. **生产出问题走紧急修复流程**，不要在 master 上直接改
-7. **Push 前看清分支名**，绝不误推到 master/dev/release
+7. **Push 前看清分支名**，绝不误推到 master/dev/uat/release
