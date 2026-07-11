@@ -209,7 +209,7 @@ sequenceDiagram
     Note over Dev: 6. 评审通过，合并 PR 到 dev（开发完成 ✅）
 
     Note over 你,Prod: === UAT 测试阶段 ===
-    测试发版->>Uat: 7. 将 fb_xxx 合并到 uat 分支
+    测试发版->>Uat: 7. 通过自动发版工具将 fb_xxx 合并到 uat 分支
     测试->>Uat: 8. 在 uat 分支执行测试用例
     Note over 测试: 9. 验证数据准确性、性能等
     测试-->>测试发版: 10. ✅ 测试通过，提交测试报告
@@ -217,11 +217,11 @@ sequenceDiagram
     Note over 你,Prod: === 准生产发版（版本日前1-2天） ===
     测试发版->>测试发版: 11. 发起发版评审
     Note over 测试发版: 12. 评审批准通过
-    测试发版->>Rel: 13. uat 合入 release（准生产）
+    测试发版->>Rel: 13. 通过自动发版工具将 uat 合入 release（准生产）
     Note over Rel: 14. 准生产最终验证
 
     Note over 你,Prod: === 版本日（15/24/29） ===
-    生产发版->>Prod: 15. release → master 生产发版
+    生产发版->>Prod: 15. 通过自动发版工具 release → master 生产发版
     Note over Prod: ✅ 发版完成，master 再次锁定
     Note over 你: 🔄 新一轮开发开始，从 master 检出新的 fb_xxx
 ```
@@ -442,11 +442,11 @@ gantt
 flowchart TD
     A["版本日前1-2天<br/>所有 fb_xxx 已合入 dev<br/>且 UAT 测试已通过"] --> B["发版负责人：<br/>发起发版评审"]
     B --> C{"评审批准？"}
-    C -->|"通过"| D["将 uat 分支合入 release<br/>准生产环境最终验证"]
+    C -->|"通过"| D["通过自动发版工具<br/>将 uat 合入 release<br/>准生产环境最终验证"]
     C -->|"驳回"| E["补充材料 / 修复问题<br/>重新提交评审"]
     E --> B
     D --> F{"验证通过？"}
-    F -->|"是"| G["版本日当天<br/>release → master"]
+    F -->|"是"| G["版本日当天<br/>通过自动发版工具<br/>release → master"]
     F -->|"否"| H["修复问题 → 重新部署 uat<br/>→ 测试通过 → 评审 → release"]
     H --> B
     G --> I["✅ 生产发版完成<br/>master 再次锁定"]
@@ -767,7 +767,7 @@ flowchart TD
 
 ### 14.1 每日核心口诀
 
-> **Master 检出 → fb_xxx 开发 → Push → 双人评审 → PR 合入 dev（开发完成）→ 测试发版人 fb→uat → 测试验证 → 发版评审批准 → uat 合入 release → 生产发版 release→master → 新一轮开发**
+> **Master 检出 → fb_xxx 开发 → Push → 双人评审 → PR 合入 dev（开发完成）→ 测试发版人通过自动发版工具 fb→uat → 测试验证 → 发版评审批准 → 通过自动发版工具 uat 合入 release → 生产发版人通过自动发版工具 release→master → 新一轮开发**
 
 ### 14.2 整体流程图
 
@@ -795,12 +795,12 @@ flowchart TD
         J -->|"是"| L["发起发版评审"]
         L --> M{"评审批准？"}
         M -->|"驳回"| K
-        M -->|"通过"| N["uat 合入 release（准生产）"]
+        M -->|"通过"| N["通过自动发版工具<br/>uat 合入 release（准生产）"]
         N --> O["准生产最终验证"]
     end
     
     subgraph "版本日（15/24/29）"
-        O --> P["release → master"]
+        O --> P["通过自动发版工具<br/>release → master"]
         P --> Q["🎉 生产发版完成"]
         Q --> R["打 Tag 标记版本"]
         R --> A
