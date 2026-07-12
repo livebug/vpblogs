@@ -1,5 +1,12 @@
 [
   {
+    "hash": "40727a2",
+    "author": "livebug",
+    "date": "7/12/2026",
+    "message": "feat: 重构 GitTimeline 组件为卡片式布局，新增文章更新日志页面",
+    "fullDate": "2026-07-12 11:18:24 +0800"
+  },
+  {
     "hash": "b5df1a1",
     "author": "livebug",
     "date": "7/11/2026",

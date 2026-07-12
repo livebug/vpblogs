@@ -1,7 +1,5 @@
 ---
-title: 标签页
-layout: home
+title: 标签
 ---
-
 
 <TagsPage />
