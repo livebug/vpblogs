@@ -1,416 +1,390 @@
 ---
-title: 项目提交时间轴
+title: 文章更新日志
 tags:
   - Timeline
   - Changelog
-  - Git
-  - History
 ---
 
-# 项目提交时间轴
-
-本页面展示了项目的完整提交历史，按时间顺序排列。所有提交信息均来自 `docs/public/data/commits.json` 文件，自动生成。
-
-<!-- ## 提交统计
-
-- **总提交数**: 58 次提交
-- **时间范围**: 2025年1月11日 - 2026年3月29日
-- **主要贡献者**: livebug, dingxh-msi, dingxh-xiaoxin, livebug-msi-ubuntu, livebug_dev_nuc 
-
--->
-
-## 完整提交历史
-
-::: timeline
-- 2026-05-02 **新增 WSL2 全栈开发环境搭建系列文档及一键初始化脚本**
-
-  - WSL2 + Clash TUN 代理配置
-  - WSL2 Debian 全栈开发环境搭建汇总
-  - Node.js 安装记录
-  - npm EACCES 权限错误修复 & pnpm 安装
-  - setup-debian-dev.sh 一键初始化脚本
-
-- 2026-04-22 **新增《code-server 使用 HTTPS》文档，详细介绍如何配置 HTTPS 访问和证书管理**
-  - 作者: livebug
-  - 时间: 2026-04-22 22:17:23
-  
-  新增了关于 code-server 配置 HTTPS 访问的详细文档，内容包括：
-  1. **HTTPS 配置方法**：使用自签名证书和 Let's Encrypt 证书的配置步骤
-  2. **证书管理**：如何生成、安装和更新 SSL/TLS 证书
-  3. **安全最佳实践**：配置安全的 HTTPS 访问和防火墙规则
-  4. **故障排除**：常见问题的解决方案和调试方法
-
-- 2026-04-19 **优化时间轴组件和创建自动化提交历史文档**
-  - 作者: Cline (AI助手)
-  - 时间: 2026-04-19 22:48:00
-  
-  完成了多项重要改进：
-  1. **创建 nvm 和 Node.js 安装指南**：新增了详细的开发环境设置文档
-  2. **优化 GitTimeline.vue 组件**：改进了时间轴的 CSS 样式和交互效果
-  3. **集成 vitepress-markdown-timeline 插件**：安装了时间轴插件并配置到 VitePress
-  4. **创建时间轴演示页面**：展示了插件的各种用法和样式
-  5. **自动生成提交历史文档**：基于 commits.json 数据生成了完整的项目时间轴
-
-- 2026-03-29 **新增文档标签和开发环境文档，优化分类和使用指南**
-  - 作者: livebug
-  - 时间: 2026-03-29 17:59:52
-  
-  优化了文档分类和检索功能，新增开发环境相关文档。
-
-- 2026-03-29 **新增文档标签，优化各个文档的分类和检索功能**
-  - 作者: livebug
-  - 时间: 2026-03-29 17:25:57
-  
-  进一步完善了文档标签系统。
-
-- 2026-03-29 **Add various documentation files for development environment setup and usage**
-  - 作者: livebug
-  - 时间: 2026-03-29 17:22:28
-  
-  新增了多个开发环境设置和使用文档。
-
-- 2026-03-29 **新增 Linux 编程开发环境初始化文档，包含 sudo 权限管理和软件安装指南**
-  - 作者: livebug
-  - 时间: 2026-03-29 17:03:00
-  
-  详细介绍了 Linux 开发环境的初始化步骤。
-
-- 2025-11-05 **Refactor code structure for improved readability and maintainability**
-  - 作者: dingxh-xiaoxin
-  - 时间: 2025-11-05 00:08:43
-  
-  重构了代码结构，提高了可读性和可维护性。
-
-- 2025-08-23 **2025-07-24: 新增 package.json 相关文档，包含支持 Windows 和 Linux 执行不同脚本的示例**
-  - 作者: livebug-msi-ubuntu
-  - 时间: 2025-08-23 23:49:56
-  
-  新增了跨平台脚本执行的文档。
-
-- 2025-07-29 **feat: 新增 VSCODE 插件开发第四课-打包文档及相关图片**
-  - 作者: Your Name
-  - 时间: 2025-07-29 14:07:31
-  
-  新增了 VSCode 插件开发系列教程的第四课。
-
-- 2025-07-20 **feat: 优化 TagsPage 组件的标签排序逻辑；调整样式以提高可读性**
-  - 作者: livebug-msi-ubuntu
-  - 时间: 2025-07-20 20:24:59
-  
-  改进了标签页的排序算法和视觉效果。
-
-- 2025-07-20 **2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍**
-  - 作者: livebug-msi-ubuntu
-  - 时间: 2025-07-20 20:18:07
-  
-  新增了 Go 语言基础使用文档。
-
-- 2025-07-20 **feat: 添加 post.data.ts 文件以定义文章数据结构并实现内容加载功能；修正 TagsPage 组件中对 post.data 的导入路径**
-  - 作者: livebug-msi-ubuntu
-  - 时间: 2025-07-20 20:17:59
-  
-  新增了文章数据结构和内容加载功能。
-
-- 2025-06-01 **feat: 更新多个页面布局，添加自定义样式；新增 commits.json 以记录最新提交信息**
-  - 作者: livebug_dev_nuc
-  - 时间: 2025-06-01 15:53:06
-  
-  更新了页面布局和样式，新增了提交记录文件。
-
-- 2025-06-01 **feat: 添加 RangeJt 组件以随机生成季和期；更新主题配置以注册新组件；新增 jitiao 页面以展示组件；更新 commits.json 以包含最新提交信息；添加首页英雄图片**
-  - 作者: livebug_dev_nuc
-  - 时间: 2025-06-01 15:37:17
-  
-  新增了随机生成组件和相关页面。
-
-- 2025-06-01 **feat: 添加首页英雄部分的图片及描述**
-  - 作者: livebug_dev_nuc
-  - 时间: 2025-06-01 15:37:02
-  
-  更新了首页的英雄部分。
-
-- 2025-05-25 **feat: 更新 GitTimeline 组件样式，优化视觉效果；添加 ToTop 组件以支持返回顶部功能；更新 commits.json 以包含最新提交信息**
-  - 作者: livebug_dev_nuc
-  - 时间: 2025-05-25 06:43:48
-  
-  优化了时间轴组件样式，新增了返回顶部功能。
-
-- 2025-05-25 **feat: 更新 TagsPage 组件样式，优化标签和文章展示布局**
-  - 作者: livebug_dev_nuc
-  - 时间: 2025-05-25 06:12:22
-  
-  改进了标签页的展示布局。
-
-- 2025-05-25 **feat: 添加《snap的docker是如何换源》文档，详细说明了修改配置文件和验证步骤**
-  - 作者: dingxh-msi
-  - 时间: 2025-05-25 13:52:11
-  
-  新增了 Docker 换源配置文档。
-
-- 2025-05-25 **Add new PNG image to public images directory**
-  - 作者: dingxh-msi
-  - 时间: 2025-05-25 12:39:18
-  
-  新增了图片资源。
-
-- 2025-05-19 **feat: 更新《WSL2配置代理》文档，新增与宿主机网络通信的说明及防火墙规则配置**
-  - 作者: Your Name
-  - 时间: 2025-05-19 12:54:01
-  
-  更新了 WSL2 代理配置文档。
-
-- 2025-05-18 **feat: 新增《Golang 离线使用》文档，包含开发环境搭建及私有库配置说明**
-  - 作者: Your Name
-  - 时间: 2025-05-18 23:27:41
-  
-  新增了 Go 离线使用文档。
-
-- 2025-05-18 **feat: 新增使用 Docker 运行 Verdaccio 文档，包含初级命令及命令解释**
-  - 作者: Your Name
-  - 时间: 2025-05-18 23:27:33
-  
-  新增了 Docker 运行 Verdaccio 的文档。
-
-- 2025-05-18 **feat: 更新工作区配置，调整标签和文件路径，新增VSCode插件开发文档**
-  - 作者: Your Name
-  - 时间: 2025-05-18 19:10:55
-  
-  更新了工作区配置和文档结构。
-
-- 2025-04-20 **2025-04-19: 新增《docker run 手册》文档，包含docker命令的基本用法和参数说明**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-20 15:57:27
-  
-  新增了 Docker 命令手册。
-
-- 2025-04-13 **2025-04-06: 更新《Antlr4 python 使用》文档，新增分析表的数据库记录结构及相关字段说明**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-13 22:09:48
-  
-  更新了 Antlr4 Python 使用文档。
-
-- 2025-04-06 **2025-04-06: 新增《go 基础使用》文档，包含数据库连接示例及常用函数介绍**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-06 23:28:32
-  
-  新增了 Go 基础使用文档。
-
-- 2025-04-06 **2025-04-06: 更新《Obsidian 使用》文档，新增关于图片格式和位置调整的说明，并添加相关图片。**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-06 15:47:31
-  
-  更新了 Obsidian 使用文档。
-
-- 2025-04-06 **2025-04-05: 新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置，补充GOPATH和GOMODCACHE的对比说明**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-06 15:27:43
-  
-  新增了 Go 离线使用详细文档。
-
-- 2025-04-05 **2025-04-05: 更新《Golang 离线使用》文档，新增VSCode设置部分并添加相关图片**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-05 01:21:48
-  
-  更新了 Go 离线使用文档的 VSCode 设置部分。
-
-- 2025-04-05 **2025-04-04: 更新文档标题，调整《第一课 前提简介》和《第二课 Tasks 使用》的标题格式**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-05 00:59:03
-  
-  优化了文档标题格式。
-
-- 2025-04-05 **2025-04-04: 新增文档《Vscode 字体-中文英文等宽》，推荐字体并提供相关链接；新增文档《Golang 离线使用》，详细介绍离线环境搭建及配置；更新 commits.json，记录最近提交信息；新增两张图片。**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-05 00:56:32
-  
-  新增了字体推荐和 Go 离线使用文档。
-
-- 2025-04-04 **更新主题和工作区配置，修改 CSS 主题为 Typewriter，新增附件文件夹路径和相对链接格式，调整工作区 ID 和最近打开文件**
-  - 作者: dingxh-msi
-  - 时间: 2025-04-04 10:25:19
-  
-  更新了主题和工作区配置。
-
-- 2025-04-03 **新增文档，创建 Powershell 基础使用指南，记录常见问题及解决方案**
-  - 作者: Your Name
-  - 时间: 2025-04-03 18:41:43
-  
-  新增了 PowerShell 使用指南。
-
-- 2025-03-29 **更新文档，新增 VSCode 插件开发学习-第二课，调整 Go 环境配置示例，增强可读性**
-  - 作者: Your Name
-  - 时间: 2025-03-29 12:00:26
-  
-  新增了 VSCode 插件开发第二课。
-
-- 2025-03-25 **更新文档，新增 Golang 离线使用手册，调整 Obsidian 配置和工作区设置**
-  - 作者: Your Name
-  - 时间: 2025-03-25 18:41:42
-  
-  更新了 Go 离线使用手册和 Obsidian 配置。
-
-- 2025-03-24 **更新文档，新增 VSCode 插件开发学习-第一课，调整工作区配置，更新文件路径和查询条件**
-  - 作者: dingxh-msi
-  - 时间: 2025-03-24 23:17:21
-  
-  新增了 VSCode 插件开发第一课。
-
-- 2025-02-27 **更新文档，新增关于页面和变更日志，调整导航链接，删除过时的时间线文档**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 23:11:54
-  
-  新增了关于页面和变更日志。
-
-- 2025-02-27 **更新 python3 基础学习文档，调整标题格式，增强可读性**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 22:42:37
-  
-  更新了 Python3 学习文档。
-
-- 2025-02-27 **修正文档，更新 ASP.NET 身份管理解决方案的内容格式，增强可读性**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 22:37:36
-  
-  优化了 ASP.NET 文档格式。
-
-- 2025-02-27 **修正文档，删除不必要的内容以提高可读性**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 22:36:36
-  
-  删除了冗余内容。
-
-- 2025-02-27 **修正文档中的链接，更新为相对路径以提高可访问性**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 22:35:26
-  
-  更新了文档链接为相对路径。
-
-- 2025-02-27 **更新文档，新增多个技术博客文章，调整标签页布局，修改示例页面标题，删除过时文档**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-27 22:32:16
-  
-  新增了多篇技术博客文章。
-
-- 2025-02-26 **迁移部分历史文档。新增多篇技术博客文章，涵盖主题包括类别与类型的区别、CSS 用户代理样式表、Fedora Samba 端口设置、GitHub 同步错误解决、正则表达式先行断言与后行断言、ASP.NET 身份管理解决方案等**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-26 22:52:45
-  
-  迁移了历史文档并新增了多篇技术文章。
-
-- 2025-02-23 **新增【vitepress 增加标签功能】**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-23 00:40:31
-  
-  新增了 VitePress 标签功能。
-
-- 2025-02-23 **更新文档标题和元数据，添加示例页面的标题信息**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-23 00:39:42
-  
-  更新了文档元数据。
-
-- 2025-02-23 **新增标签页，支持在导航中访问标签页面**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-23 00:38:49
-  
-  新增了标签页面导航。
-
-- 2025-02-23 **新增标签页组件，支持按标签过滤文章**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-23 00:38:25
-  
-  新增了标签过滤功能。
-
-- 2025-02-20 **新增 python3 基础学习文档，更新 Antlr4 学习内容**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-20 00:34:20
-  
-  新增了 Python3 基础学习文档，更新了 Antlr4 相关内容。
-
-- 2025-02-16 **20250216 新增【Antlr4 python 使用】**
-  - 作者: Your Name
-  - 时间: 2025-02-16 23:07:18
-  
-  新增了 Antlr4 Python 使用文档。
-
-- 2025-02-09 **update vitepress 时间轴组件 用于展示git提交信息**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-09 23:05:53
-  
-  更新了 VitePress 时间轴组件，用于展示 Git 提交信息。
-
-- 2025-02-09 **20250209 新增【vitepress 时间轴组件 用于展示git提交信息】**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-09 22:54:07
-  
-  新增了 VitePress 时间轴组件文档。
-
-- 2025-02-09 **20250209 注册自定义全局组件-Git提交记录时间轴组件。根据git提交记录自动生成；替换原来的手写时间轴**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-09 01:11:37
-  
-  注册了 Git 提交记录时间轴全局组件。
-
-- 2025-02-04 **20250204 + 调整使用 Obsidian 写文档，docs可以直接在软件中写 + 增加文章【个人博客系统的想法】**
-  - 作者: dingxh-msi
-  - 时间: 2025-02-04 18:57:01
-  
-  调整了文档编写工具，新增了个人博客系统文章。
-
-- 2025-01-18 **增加文章【Vue3 使用 mockjs 模拟api数据】**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-18 23:45:59
-  
-  新增了 Vue3 MockJS 使用文章。
-
-- 2025-01-18 **为文章增加标签**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-18 15:39:53
-  
-  为文章添加了标签功能。
-
-- 2025-01-12 **Update deploy.yml**
-  - 作者: livebug
-  - 时间: 2025-01-12 18:52:14
-  
-  更新了部署配置文件。
-
-- 2025-01-12 **20250112 搭建自动化发布、调整outline展示层级**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-12 18:50:35
-  
-  搭建了自动化发布流程，调整了大纲展示层级。
-
-- 2025-01-12 **2020112 增加自动部署流程ACTION**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-12 17:38:11
-  
-  新增了自动部署流程。
-
-- 2025-01-11 **2025011 两篇文章     - learn 【VitePress Sidebar 动态侧边栏插件】学习使用     - note 【本网站版本记录】  以后对网站调整修订记录**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-11 23:44:47
-  
-  新增了 VitePress 侧边栏插件学习和网站版本记录文档。
-
-- 2025-01-11 **2025011 建立初始化网站     初始化，准备内容主题**
-  - 作者: dingxh-msi
-  - 时间: 2025-01-11 23:44:20
-  
-  项目初始化，建立了基础网站结构。
-:::
-
-## 总结
-
-这个时间轴展示了项目从 2025年1月11日 初始化到 2026年4月22日 的最新发展历程。通过这个时间轴，你可以清晰地看到：
-
-1. **项目演进**：从基础搭建到功能完善的全过程
-2. **技术栈变化**：逐步引入了 VitePress、标签系统、时间轴组件等
-3. **文档完善**：不断新增和优化各类技术文档
-4. **功能增强**：添加了自动化部署、标签过滤、响应式设计等功能
-
-时间轴将持续更新，记录项目的每一个重要里程碑。
-
----
-
-*本页面使用 `vitepress-markdown-timeline` 插件自动生成，数据来源于 `docs/public/data/commits.json`。*
+# 文章更新日志
+
+> 记录博客文章的新增与更新 · 按时间倒序排列
+
+<div class="article-timeline">
+
+## 2026 年
+
+<div class="tl-group">
+
+<div class="tl-item">
+  <span class="tl-date">05-02</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat DevEnv">DevEnv</span>
+  <strong>WSL2 全栈开发环境搭建系列</strong>
+  <small>WSL2 + Clash TUN 代理、Debian 环境搭建、Node.js/pnpm 安装、一键初始化脚本</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-22</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat DevEnv">DevEnv</span>
+  <strong>code-server 使用 HTTPS</strong>
+  <small>自签名证书、Let's Encrypt、证书管理与安全实践</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-19</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat NodeJs">NodeJs</span>
+  <strong>nvm 和 Node.js 安装指南</strong>
+  <small>开发环境设置文档</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-19</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat vitepress">VitePress</span>
+  <strong>时间轴组件 & 构建体系优化</strong>
+  <small>集成 vitepress-markdown-timeline 插件、重构 GitTimeline 组件</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">03-29</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Linux">Linux</span>
+  <strong>Linux 编程开发环境初始化</strong>
+  <small>sudo 权限管理、软件安装指南</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">03-29</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat">站点</span>
+  <strong>文档标签系统 & 分类优化</strong>
+  <small>全局标签系统、分类与检索功能完善</small>
+</div>
+
+</div>
+
+## 2025 年
+
+<div class="tl-group">
+
+<div class="tl-item">
+  <span class="tl-date">11-05</span>
+  <span class="tl-badge upd">重构</span>
+  <span class="tl-cat">站点</span>
+  <strong>代码结构重构</strong>
+  <small>提升可读性与可维护性</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">08-23</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat NodeJs">NodeJs</span>
+  <strong>package.json 跨平台脚本</strong>
+  <small>支持 Windows 和 Linux 执行不同脚本</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">07-29</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat VSCodeEx">VSCodeEx</span>
+  <strong>VSCode 插件开发第四课 - 打包</strong>
+  <small>打包发布流程</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">07-20</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat">站点</span>
+  <strong>TagsPage 组件优化</strong>
+  <small>标签排序逻辑、样式调整</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">06-01</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat">站点</span>
+  <strong>首页 & 组件体系</strong>
+  <small>RangeJt 随机组件、CSS 动画图标、布局优化</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">05-25</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Docker">Docker</span>
+  <strong>Docker 换源配置</strong>
+  <small>snap docker 修改配置文件和验证步骤</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">05-25</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat">站点</span>
+  <strong>GitTimeline 样式优化 + ToTop 返回顶部</strong>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">05-19</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat DevEnv">DevEnv</span>
+  <strong>WSL2 配置代理</strong>
+  <small>宿主机网络通信、防火墙规则配置</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">05-18</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Golang">Golang</span>
+  <strong>Golang 离线使用</strong>
+  <small>开发环境搭建及私有库配置</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">05-18</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Docker">Docker</span>
+  <strong>Docker 运行 Verdaccio</strong>
+  <small>私有 npm 仓库搭建</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-20</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Docker">Docker</span>
+  <strong>docker run 手册</strong>
+  <small>基本用法和参数说明</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-13</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat Antlr4">Antlr4</span>
+  <strong>Antlr4 Python 使用</strong>
+  <small>分析表数据库记录结构</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-06</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Golang">Golang</span>
+  <strong>Go 基础使用</strong>
+  <small>数据库连接示例及常用函数</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-06</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat DevEnv">DevEnv</span>
+  <strong>Obsidian 使用</strong>
+  <small>图片格式和位置调整</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-05</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat VSCodeEx">VSCodeEx</span>
+  <strong>VSCode 字体 - 中文英文等宽</strong>
+  <small>字体推荐及相关链接</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">04-03</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat System">System</span>
+  <strong>PowerShell 基础使用指南</strong>
+  <small>常见问题及解决方案</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">03-29</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat VSCodeEx">VSCodeEx</span>
+  <strong>VSCode 插件开发第二课</strong>
+  <small>Go 环境配置示例</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">03-25</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Golang">Golang</span>
+  <strong>Go 代理配置</strong>
+  <small>goproxy 设置</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">03-24</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat VSCodeEx">VSCodeEx</span>
+  <strong>VSCode 插件开发第一课</strong>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-27</span>
+  <span class="tl-badge upd">更新</span>
+  <span class="tl-cat">站点</span>
+  <strong>文档规范化</strong>
+  <small>关于页面、变更日志、全站相对路径、格式优化</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-26</span>
+  <span class="tl-badge new">迁移</span>
+  <span class="tl-cat">综合</span>
+  <strong>历史文档迁移</strong>
+  <small>批量迁移多篇技术文章</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-23</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat vitepress">VitePress</span>
+  <strong>标签系统上线</strong>
+  <small>TagsPage 组件、标签过滤</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-20</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Programming">Programming</span>
+  <strong>Python3 基础学习</strong>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-16</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Antlr4">Antlr4</span>
+  <strong>Antlr4 Python 入门</strong>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-09</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat vitepress">VitePress</span>
+  <strong>GitTimeline 组件诞生</strong>
+  <small>根据 git 提交记录自动生成时间轴</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">02-04</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Think">心得</span>
+  <strong>个人博客系统的想法</strong>
+  <small>Obsidian 写作流程</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">01-18</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat Frontend">Frontend</span>
+  <strong>Vue3 使用 MockJS 模拟 API 数据</strong>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">01-12</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat vitepress">VitePress</span>
+  <strong>VitePress 部署发布到 GitHub Pages</strong>
+  <small>CI/CD 自动化部署流程</small>
+</div>
+
+<div class="tl-item">
+  <span class="tl-date">01-11</span>
+  <span class="tl-badge new">新增</span>
+  <span class="tl-cat vitepress">VitePress</span>
+  <strong>VitePress Sidebar 动态侧边栏插件</strong>
+  <small>项目初始化、建立网站结构</small>
+</div>
+
+</div>
+
+</div>
+
+<style scoped>
+.article-timeline {
+  max-width: 100%;
+}
+
+.tl-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 32px;
+}
+
+.tl-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  flex-wrap: wrap;
+}
+
+.tl-item:hover {
+  background: var(--vp-c-bg-soft);
+  border-color: var(--vp-c-divider);
+}
+
+.tl-date {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+  color: var(--vp-c-text-3);
+  flex-shrink: 0;
+  min-width: 42px;
+}
+
+.tl-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  flex-shrink: 0;
+}
+.tl-badge.new {
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+}
+.tl-badge.upd {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+}
+
+.tl-cat {
+  font-size: 0.7rem;
+  font-family: var(--vp-font-family-mono);
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--vp-c-divider);
+  flex-shrink: 0;
+}
+
+.tl-item strong {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+.tl-item small {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  width: 100%;
+  margin-top: 2px;
+  padding-left: 72px;
+}
+
+@media (max-width: 640px) {
+  .tl-item { gap: 6px; padding: 8px 10px; }
+  .tl-item small { padding-left: 0; }
+}
+
+.dark .tl-badge.new { background: rgba(34, 197, 94, 0.18); color: #4ade80; }
+.dark .tl-badge.upd { background: rgba(96, 165, 250, 0.18); color: #93c5fd; }
+</style>
+

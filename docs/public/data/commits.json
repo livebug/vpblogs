@@ -1,5 +1,26 @@
 [
   {
+    "hash": "b5df1a1",
+    "author": "livebug",
+    "date": "7/11/2026",
+    "message": "docs: VSCodeEx - 时序图与流程图中标注自动发版工具",
+    "fullDate": "2026-07-11 23:11:27 +0800"
+  },
+  {
+    "hash": "b12d004",
+    "author": "livebug",
+    "date": "7/11/2026",
+    "message": "docs: add VS Code editor guide with efficiency tips",
+    "fullDate": "2026-07-11 12:55:17 +0800"
+  },
+  {
+    "hash": "e8fbc80",
+    "author": "livebug",
+    "date": "7/11/2026",
+    "message": "feat: ETL Git 操作手册 + Mermaid 图表渲染 + 页面美化",
+    "fullDate": "2026-07-11 12:25:34 +0800"
+  },
+  {
     "hash": "220f2a4",
     "author": "livebug",
     "date": "7/11/2026",
