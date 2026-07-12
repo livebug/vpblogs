@@ -1,5 +1,8 @@
 ---
 title: 文章更新日志
+layout: home
+
+sidebar: false
 tags:
   - Timeline
   - Changelog
