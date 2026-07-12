@@ -1,11 +1,9 @@
 ---
-title: Antlr4 python 使用
+title: Antlr4 Python 使用学习
 tags:
   - Antlr4
-  - antlr4
-  - python
+  - Python
 date: 2023-09-26T00:15:06+08:00
-draft: true
 ---
 # Antlr4 python 使用学习
 ## 安装及基本说明

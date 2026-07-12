@@ -1,6 +1,7 @@
 ---
 outline: deep
 title: Runtime API Examples
+exclude: true
 ---
 
 # Runtime API Examples

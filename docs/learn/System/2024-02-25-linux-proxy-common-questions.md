@@ -1,9 +1,11 @@
 ---
-title : 'linux 使用代理以及遇到的问题'
-date : 2024-02-25T17:30:25+08:00
+title: linux 使用代理以及遇到的问题
+date: 2024-02-25T17:30:25+08:00
 toc: true
-tags: ['System','linux','proxy']
-
+tags:
+  - Linux
+  - Proxy
+exclude: true
 ---
 # linux 使用代理以及遇到的问题
 

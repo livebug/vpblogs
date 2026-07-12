@@ -1,5 +1,12 @@
 [
   {
+    "hash": "f89f44c",
+    "author": "livebug",
+    "date": "7/12/2026",
+    "message": "feat: 重构标签页为卡片式布局，新增标签归并与统计功能",
+    "fullDate": "2026-07-12 11:32:15 +0800"
+  },
+  {
     "hash": "40727a2",
     "author": "livebug",
     "date": "7/12/2026",

@@ -1,5 +1,6 @@
 ---
-title : 'Markdown Extension Examples'
+title: Markdown Extension Examples
+exclude: true
 ---
 # Markdown Extension Examples
 
