@@ -135,7 +135,7 @@ flowchart LR
     M -- "① 从 master 检出" --> FB
     FB -- "② 双人评审 + PR 合并<br/>→ 开发完成" --> D
     FB -. "③ 测试发版人部署 fb→uat" .-> U
-    U -- "④ 测试通过 + 评审批准" --> R
+    FB -. "④ 测试通过 + 评审批准<br/>fb→release" .-> R
     R -- "⑤ 版本日发版" --> M
 
     %% ═══ 样式 ═══
@@ -159,7 +159,7 @@ flowchart LR
 | `master` | 生产运行脚本 | 发版负责人 | **仅在版本日**（15/24/29）|
 | `dev` | 代码审查，fb_xxx 通过 PR 合入 | 开发者提 PR | 日常，每个 fb_xxx 完成就合入 |
 | `uat` | UAT 测试分支，测试发版人将 fb_xxx 合并到此，测试人员验证 | 测试发版人部署、测试人验证 | 每次测试发版人部署时更新 |
-| `release` | 准生产，uat 测试通过 + 发版评审批准后合入 | 发版负责人 | 版本日前 1-2 天 |
+| `release` | 准生产，fb_xxx 测试通过 + 发版评审批准后合入 | 发版负责人 | 版本日前 1-2 天 |
 | `fb_xxx` | 你的开发分支 | 你 | 从 master 检出，开发完提交 PR 到 dev |
 
 ### 3.3 版本窗口机制
@@ -181,7 +181,7 @@ flowchart LR
 2. 一个版本窗口内，可能有多个 `fb_xxx` 在并行开发
 3. 开发完成 = 双人代码评审通过后，提交 PR 将 `fb_xxx` 合并到 `dev`
 4. 测试发版人将 `fb_xxx` 合并到 `uat` 分支，测试人员在 `uat` 上验证
-5. UAT 测试通过 **且** 发版评审批准后，发版负责人将 `uat` 合入 `release`（准生产）
+5. UAT 测试通过 **且** 发版评审批准后，发版负责人将 `fb_xxx` 合入 `release`（准生产）
 6. 生产发版人员在版本日当天，将 `release` → `master`，完成发版，新一轮开发开始
 
 ### 3.4 完整开发到发版流程
@@ -209,7 +209,7 @@ sequenceDiagram
     Note over Dev: 6. 评审通过，合并 PR 到 dev（开发完成 ✅）
 
     Note over 你,Prod: === UAT 测试阶段 ===
-    测试发版->>Uat: 7. 通过自动发版工具将 fb_xxx 合并到 uat 分支
+    测试发版->>Uat: 7. 将 fb_xxx 合并到 uat 分支
     测试->>Uat: 8. 在 uat 分支执行测试用例
     Note over 测试: 9. 验证数据准确性、性能等
     测试-->>测试发版: 10. ✅ 测试通过，提交测试报告
@@ -217,11 +217,11 @@ sequenceDiagram
     Note over 你,Prod: === 准生产发版（版本日前1-2天） ===
     测试发版->>测试发版: 11. 发起发版评审
     Note over 测试发版: 12. 评审批准通过
-    测试发版->>Rel: 13. 通过自动发版工具将 uat 合入 release（准生产）
+    测试发版->>Rel: 13. fb_xxx 合入 release（准生产）
     Note over Rel: 14. 准生产最终验证
 
     Note over 你,Prod: === 版本日（15/24/29） ===
-    生产发版->>Prod: 15. 通过自动发版工具 release → master 生产发版
+    生产发版->>Prod: 15. release → master 生产发版
     Note over Prod: ✅ 发版完成，master 再次锁定
     Note over 你: 🔄 新一轮开发开始，从 master 检出新的 fb_xxx
 ```
@@ -419,19 +419,19 @@ gantt
     
     section 版本窗口1
     日常开发 fb_xxx→dev    :a1, 01, 13d
-    uat→release 合入       :a2, 13, 2d
+    fb→release 合入        :a2, 13, 2d
     准生产验证             :a3, 14, 1d
     生产发版 release→master :milestone, a4, 15, 1d
     
     section 版本窗口2
     日常开发 fb_xxx→dev    :b1, 16, 7d
-    uat→release 合入       :b2, 23, 1d
+    fb→release 合入        :b2, 23, 1d
     准生产验证             :b3, 24, 1d
     生产发版 release→master :milestone, b4, 24, 1d
     
     section 版本窗口3
     日常开发 fb_xxx→dev    :c1, 25, 3d
-    uat→release 合入       :c2, 28, 1d
+    fb→release 合入        :c2, 28, 1d
     准生产验证             :c3, 29, 1d
     生产发版 release→master :milestone, c4, 29, 1d
 ```
@@ -442,12 +442,12 @@ gantt
 flowchart TD
     A["版本日前1-2天<br/>所有 fb_xxx 已合入 dev<br/>且 UAT 测试已通过"] --> B["发版负责人：<br/>发起发版评审"]
     B --> C{"评审批准？"}
-    C -->|"通过"| D["通过自动发版工具<br/>将 uat 合入 release<br/>准生产环境最终验证"]
+    C -->|"通过"| D["将 fb_xxx 合入 release<br/>准生产环境最终验证"]
     C -->|"驳回"| E["补充材料 / 修复问题<br/>重新提交评审"]
     E --> B
     D --> F{"验证通过？"}
-    F -->|"是"| G["版本日当天<br/>通过自动发版工具<br/>release → master"]
-    F -->|"否"| H["修复问题 → 重新部署 uat<br/>→ 测试通过 → 评审 → release"]
+    F -->|"是"| G["版本日当天<br/>release → master"]
+    F -->|"否"| H["修复问题 → 重新部署 uat<br/>→ 测试通过 → 评审 → fb→release"]
     H --> B
     G --> I["✅ 生产发版完成<br/>master 再次锁定"]
     I --> J["打 Tag 标记版本号<br/>如: v2026.07.15"]
@@ -767,7 +767,7 @@ flowchart TD
 
 ### 14.1 每日核心口诀
 
-> **Master 检出 → fb_xxx 开发 → Push → 双人评审 → PR 合入 dev（开发完成）→ 测试发版人通过自动发版工具 fb→uat → 测试验证 → 发版评审批准 → 通过自动发版工具 uat 合入 release → 生产发版人通过自动发版工具 release→master → 新一轮开发**
+> **Master 检出 → fb_xxx 开发 → Push → 双人评审 → PR 合入 dev（开发完成）→ 测试发版人 fb→uat → 测试验证 → 发版评审批准 → fb_xxx 合入 release → 生产发版 release→master → 新一轮开发**
 
 ### 14.2 整体流程图
 
@@ -795,12 +795,12 @@ flowchart TD
         J -->|"是"| L["发起发版评审"]
         L --> M{"评审批准？"}
         M -->|"驳回"| K
-        M -->|"通过"| N["通过自动发版工具<br/>uat 合入 release（准生产）"]
+        M -->|"通过"| N["fb_xxx 合入 release（准生产）"]
         N --> O["准生产最终验证"]
     end
     
     subgraph "版本日（15/24/29）"
-        O --> P["通过自动发版工具<br/>release → master"]
+        O --> P["release → master"]
         P --> Q["🎉 生产发版完成"]
         Q --> R["打 Tag 标记版本"]
         R --> A
@@ -813,8 +813,8 @@ flowchart TD
 |------|--------|
 | **master** | 生产的镜子，非版本日碰都别碰 |
 | **fb_xxx** | 你的工作台，从 master 来，PR 合入 dev 即开发完成 |
-| **dev** | 代码审查站，通过 PR 合入，发版人从这里部署 uat |
-| **uat** | 测试练兵场，发版人部署、测试人验证，通过 + 评审后进 release |
+| **dev** | 代码审查站，PR 合入即开发完成，不参与后续部署 |
+| **uat** | 测试练兵场，发版人将 fb_xxx 部署到 uat，测试人验证 |
 | **release** | 发版前的最后一道安检 |
 
 ### 14.4 最核心的几条铁律

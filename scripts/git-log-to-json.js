@@ -1,8 +1,7 @@
 // scripts/gitlog.js
 import { execSync } from 'child_process'
 import { writeFileSync } from 'fs'
-import { join } from 'path'
-import path from 'path'
+import path, { join } from 'path'
 
 const __dirname = path.resolve();
 

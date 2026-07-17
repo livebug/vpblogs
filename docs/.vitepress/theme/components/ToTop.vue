@@ -10,16 +10,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue' // 导入 Vue 的 ref 和 onMounted
+import { ref, onMounted, onUnmounted } from 'vue' // 导入 Vue 的 ref 和 onMounted
 
 const visible = ref(false) // 定义响应式变量，控制按钮显示与否
 
+const handleScroll = () => {
+    visible.value = window.scrollY > 300 // 当滚动高度大于 300 时显示按钮
+}
+
 onMounted(() => {
     // 组件挂载后执行
-    window.addEventListener('scroll', () => {
-        // 监听窗口滚动事件
-        visible.value = window.scrollY > 300 // 当滚动高度大于 300 时显示按钮
-    })
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
 })
 
 const scrollToTop = () => {

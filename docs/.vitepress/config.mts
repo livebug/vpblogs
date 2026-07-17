@@ -39,8 +39,7 @@ function f1() {
   // 每个文章主题的页面
   let res: VitePressSidebarOptions[] = [];
   let menus = ['learn', 'note', 'think', 'write']
-  for (const v in menus) {
-    let name = menus[v]
+  for (const name of menus) {
     let subMenu: VitePressSidebarOptions = {
       documentRootPath: 'docs',
       scanStartPath: `${name}`,

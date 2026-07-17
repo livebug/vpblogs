@@ -1,5 +1,19 @@
 [
   {
+    "hash": "7893817",
+    "author": "livebug",
+    "date": "7/12/2026",
+    "message": "docs: 为标签页和更新日志页配置 home 布局并隐藏侧边栏",
+    "fullDate": "2026-07-12 13:27:55 +0800"
+  },
+  {
+    "hash": "844ac4c",
+    "author": "livebug",
+    "date": "7/12/2026",
+    "message": "docs: 统一文档元数据格式，扩充文章内容并排除示例页面",
+    "fullDate": "2026-07-12 13:00:15 +0800"
+  },
+  {
     "hash": "f89f44c",
     "author": "livebug",
     "date": "7/12/2026",
