@@ -7,13 +7,19 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useData } from 'vitepress'
 
 const { page } = useData()
 
 // 仅在「金融监管周报」栏目展示
 const visible = computed(() => page.value.relativePath.startsWith('regwatch/'))
+
+// 给 body 加标记类，用于把周报正文放宽到 A4 宽度（见 custom.css）
+watchEffect(() => {
+  if (typeof document === 'undefined') return
+  document.body.classList.toggle('regwatch-page', visible.value)
+})
 
 function exportPdf() {
   window.print()

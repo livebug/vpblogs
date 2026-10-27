@@ -155,3 +155,30 @@
     word-break: break-all;
   }
 }
+
+/* ========== 周报正文：放宽到接近 A4 宽度 ========== */
+/* A4 宽度 210mm ≈ 794px（96dpi）。仅在「金融监管周报」页面生效（body.regwatch-page 由 ExportPdf.vue 注入） */
+@media (min-width: 1366px) {
+  body.regwatch-page .VPDoc.has-aside .content-container {
+    max-width: 794px;
+  }
+}
+
+/* 1366—1439px 屏宽较紧时，右栏目录略收窄，保证正文达到 A4 宽度 */
+@media (min-width: 1366px) and (max-width: 1439px) {
+  body.regwatch-page .VPDoc .aside {
+    max-width: 200px;
+  }
+}
+
+/* 宽屏下放大一点正文字号，接近纸质阅读比例 */
+@media (min-width: 1440px) {
+  body.regwatch-page .vp-doc {
+    font-size: 16px;
+  }
+}
+
+/* 宽屏下表格允许更舒展，避免列被挤压 */
+body.regwatch-page .vp-doc table {
+  width: 100%;
+}
