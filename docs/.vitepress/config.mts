@@ -23,7 +23,8 @@ const vitePressOptions = {
       { text: 'Home', link: '/' },
       { text: 'About', link: '/note/about' },
       { text: 'Tags', link: '/note/tags' },
-      { text: 'Timeline', link: '/note/timeline' }
+      { text: 'Timeline', link: '/note/timeline' },
+      { text: '监管周报', link: '/regwatch/' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/livebug' }
@@ -38,7 +39,7 @@ const vitePressOptions = {
 function f1() {
   // 每个文章主题的页面
   let res: VitePressSidebarOptions[] = [];
-  let menus = ['learn', 'note', 'think', 'write']
+  let menus = ['learn', 'note', 'think', 'write', 'regwatch']
   for (const name of menus) {
     let subMenu: VitePressSidebarOptions = {
       documentRootPath: 'docs',
