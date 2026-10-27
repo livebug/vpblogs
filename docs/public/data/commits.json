@@ -1,5 +1,12 @@
 [
   {
+    "hash": "ed891dc",
+    "author": "livebug",
+    "date": "10/27/2026",
+    "message": "feat(regwatch): 周报页面支持导出 PDF（打印样式 + 导出按钮）",
+    "fullDate": "2026-10-27 09:27:58 +0800"
+  },
+  {
     "hash": "f54fd72",
     "author": "livebug",
     "date": "10/27/2026",

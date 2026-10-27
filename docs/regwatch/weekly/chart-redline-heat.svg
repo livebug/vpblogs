@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="478" viewBox="0 0 880 478" role="img" style="max-width:100%;height:auto"><rect width="880" height="478" fill="#ffffff"/>
+<text x="24" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" font-weight="700" fill="#1f2328">监管红线风险热力图（2026 年第 43 周）</text>
+<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">横向为处罚/检查维度，纵向为红线类型；强度 1—5 为本期观察到的监管关注度与罚则力度</text>
+<line x1="24" y1="80" x2="856" y2="80" stroke="#e6e8eb" stroke-width="1"/>
+<text x="294.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a" text-anchor="middle">处罚频次</text>
+<text x="426.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a" text-anchor="middle">单笔金额</text>
+<text x="558.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a" text-anchor="middle">双罚/问责</text>
+<text x="690.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a" text-anchor="middle">业务影响</text>
+<text x="822.0" y="124" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a" text-anchor="middle">趋势方向</text>
+<text x="214" y="164.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">监管数据/EAST报送</text>
+<rect x="230" y="140.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="294.0" y="165.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="362" y="140.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="426.0" y="165.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="494" y="140.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="558.0" y="165.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="626" y="140.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="690.0" y="165.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="758" y="140.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="822.0" y="165.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="214" y="208.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">数据安全</text>
+<rect x="230" y="184.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="294.0" y="209.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="362" y="184.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="426.0" y="209.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="494" y="184.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="558.0" y="209.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="626" y="184.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="690.0" y="209.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="758" y="184.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="822.0" y="209.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<text x="214" y="252.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">反洗钱与尽职调查</text>
+<rect x="230" y="228.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="294.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="362" y="228.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="1.0"/>
+<text x="426.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<rect x="494" y="228.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="558.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="626" y="228.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="690.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="758" y="228.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="822.0" y="253.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="214" y="296.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">金融统计报送</text>
+<rect x="230" y="272.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.42"/>
+<text x="294.0" y="297.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="362" y="272.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="426.0" y="297.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="494" y="272.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.42"/>
+<text x="558.0" y="297.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="626" y="272.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="690.0" y="297.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="758" y="272.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="822.0" y="297.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="214" y="340.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">金融科技管理</text>
+<rect x="230" y="316.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.42"/>
+<text x="294.0" y="341.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="362" y="316.0" width="128" height="40" rx="4" fill="#f6f7f8" fill-opacity="1"/>
+<rect x="494" y="316.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.42"/>
+<text x="558.0" y="341.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="626" y="316.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="690.0" y="341.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="758" y="316.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.61"/>
+<text x="822.0" y="341.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<text x="214" y="384.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">AI 应用与算法治理</text>
+<rect x="230" y="360.0" width="128" height="40" rx="4" fill="#f6f7f8" fill-opacity="1"/>
+<rect x="362" y="360.0" width="128" height="40" rx="4" fill="#f6f7f8" fill-opacity="1"/>
+<rect x="494" y="360.0" width="128" height="40" rx="4" fill="#f6f7f8" fill-opacity="1"/>
+<rect x="626" y="360.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="690.0" y="385.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="758" y="360.0" width="128" height="40" rx="4" fill="#c0392b" fill-opacity="0.8"/>
+<text x="822.0" y="385.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<text x="228" y="428" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11.5" fill="#8b949e">强度（1 低 — 5 高）</text>
+<rect x="358" y="417" width="38" height="15" rx="3" fill="#c0392b" fill-opacity="0.22"/>
+<text x="377" y="429" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">1</text>
+<rect x="404" y="417" width="38" height="15" rx="3" fill="#c0392b" fill-opacity="0.42"/>
+<text x="423" y="429" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">2</text>
+<rect x="450" y="417" width="38" height="15" rx="3" fill="#c0392b" fill-opacity="0.61"/>
+<text x="469" y="429" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">3</text>
+<rect x="496" y="417" width="38" height="15" rx="3" fill="#c0392b" fill-opacity="0.8"/>
+<text x="515" y="429" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="542" y="417" width="38" height="15" rx="3" fill="#c0392b" fill-opacity="1.0"/>
+<text x="561" y="429" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#ffffff" text-anchor="middle">5</text>
+<text x="24" y="462" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e">数据来源：2026-10-16 至 2026-10-26 人行及金融监管总局处罚公示、公开报道；强度为定性研判，非统计口径。</text>
+</svg>

@@ -1,37 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="452" viewBox="0 0 860 452" role="img" style="max-width:100%;height:auto"><rect width="860" height="452" fill="#ffffff"/>
-<text x="24" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" font-weight="700" fill="#1f2328">本周主要大额罚单（按金额）</text>
-<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">单位：万元 · 仅列公开可核实金额，非本周罚没总额</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="532" viewBox="0 0 860 532" role="img" style="max-width:100%;height:auto"><rect width="860" height="532" fill="#ffffff"/>
+<text x="24" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" font-weight="700" fill="#1f2328">本周大额罚单（补充 10-23 人行批次后）</text>
+<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">单位：万元 · 仅列公开可核实金额；不含“没收违法所得”部分</text>
 <line x1="24" y1="80" x2="836" y2="80" stroke="#e6e8eb" stroke-width="1"/>
-<line x1="234.0" y1="92" x2="234.0" y2="380.0" stroke="#e6e8eb" stroke-width="1"/>
+<line x1="234.0" y1="92" x2="234.0" y2="460.0" stroke="#e6e8eb" stroke-width="1"/>
 <text x="234.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">0</text>
-<line x1="367.0" y1="92" x2="367.0" y2="380.0" stroke="#e6e8eb" stroke-width="1"/>
-<text x="367.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">250</text>
-<line x1="500.0" y1="92" x2="500.0" y2="380.0" stroke="#e6e8eb" stroke-width="1"/>
-<text x="500.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">500</text>
-<line x1="633.0" y1="92" x2="633.0" y2="380.0" stroke="#e6e8eb" stroke-width="1"/>
-<text x="633.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">750</text>
-<line x1="766.0" y1="92" x2="766.0" y2="380.0" stroke="#e6e8eb" stroke-width="1"/>
-<text x="766.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">1,000</text>
-<text x="222" y="124.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">七家全国性银行（人行反洗钱）</text>
-<rect x="234.0" y="111.0" width="493.7" height="18" rx="3" fill="#c0392b"/>
-<text x="735.7" y="124.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">928 万</text>
-<text x="222" y="164.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">湖北银行（EAST等）</text>
-<rect x="234.0" y="151.0" width="151.6" height="18" rx="3" fill="#2f6f5e"/>
-<text x="393.6" y="164.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">285 万</text>
-<text x="222" y="204.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">河北灵寿农商行</text>
-<rect x="234.0" y="191.0" width="79.9" height="18" rx="3" fill="#2f6f5e"/>
-<text x="321.9" y="204.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">150.19 万</text>
-<text x="222" y="244.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">赞皇县农信联社</text>
-<rect x="234.0" y="231.0" width="74.4" height="18" rx="3" fill="#2f6f5e"/>
-<text x="316.4" y="244.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">139.80 万</text>
-<text x="222" y="284.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">四川天府银行贵阳分行</text>
-<rect x="234.0" y="271.0" width="16.0" height="18" rx="3" fill="#2f6f5e"/>
-<text x="258.0" y="284.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">30 万</text>
-<text x="222" y="324.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">固安恒升村镇银行</text>
-<rect x="234.0" y="311.0" width="2.7" height="18" rx="3" fill="#2f6f5e"/>
-<text x="244.7" y="324.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">5 万</text>
-<text x="222" y="364.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">浦发信用卡中心</text>
-<rect x="234.0" y="351.0" width="2.0" height="18" rx="3" fill="#2f6f5e"/>
-<text x="242.5" y="364.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">1 万</text>
-<text x="24" y="436" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e">数据来源：人民银行行政处罚公示（2026-10-16）、金融监管总局派出机构处罚信息公开表。</text>
+<line x1="367.0" y1="92" x2="367.0" y2="460.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="367.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">500</text>
+<line x1="500.0" y1="92" x2="500.0" y2="460.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="500.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">1,000</text>
+<line x1="633.0" y1="92" x2="633.0" y2="460.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="633.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">1,500</text>
+<line x1="766.0" y1="92" x2="766.0" y2="460.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="766.0" y="86" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="middle">2,000</text>
+<text x="222" y="124.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">邮储银行（10 项违法，含金融统计）</text>
+<rect x="234.0" y="111.0" width="463.7" height="18" rx="3" fill="#c0392b"/>
+<text x="705.7" y="124.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">1,743.30 万</text>
+<text x="222" y="164.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">广发银行（10 项违法）</text>
+<rect x="234.0" y="151.0" width="455.5" height="18" rx="3" fill="#2f6f5e"/>
+<text x="697.5" y="164.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">1,712.40 万</text>
+<text x="222" y="204.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">七家全国性银行（单批次）</text>
+<rect x="234.0" y="191.0" width="246.8" height="18" rx="3" fill="#2f6f5e"/>
+<text x="488.8" y="204.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">928 万</text>
+<text x="222" y="244.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">湖北银行（EAST 等）</text>
+<rect x="234.0" y="231.0" width="75.8" height="18" rx="3" fill="#2f6f5e"/>
+<text x="317.8" y="244.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">285 万</text>
+<text x="222" y="284.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">河北灵寿农商行</text>
+<rect x="234.0" y="271.0" width="40.0" height="18" rx="3" fill="#2f6f5e"/>
+<text x="282.0" y="284.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">150.19 万</text>
+<text x="222" y="324.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">赞皇县农信联社</text>
+<rect x="234.0" y="311.0" width="37.2" height="18" rx="3" fill="#2f6f5e"/>
+<text x="279.2" y="324.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">139.80 万</text>
+<text x="222" y="364.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">四川天府银行贵阳分行</text>
+<rect x="234.0" y="351.0" width="8.0" height="18" rx="3" fill="#2f6f5e"/>
+<text x="250.0" y="364.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">30 万</text>
+<text x="222" y="404.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">固安恒升村镇银行</text>
+<rect x="234.0" y="391.0" width="2.0" height="18" rx="3" fill="#2f6f5e"/>
+<text x="243.3" y="404.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">5 万</text>
+<text x="222" y="444.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12.5" fill="#1f2328" text-anchor="end">浦发信用卡中心</text>
+<rect x="234.0" y="431.0" width="2.0" height="18" rx="3" fill="#2f6f5e"/>
+<text x="242.3" y="444.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" font-weight="600" fill="#1f2328">1 万</text>
+<text x="24" y="516" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e">数据来源：中国青年网（2026-10-23）、人行及金融监管总局处罚公示；邮储、广发另分别没收违法所得 290.2 元、1.62 万元。</text>
 </svg>

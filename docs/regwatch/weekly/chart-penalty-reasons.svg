@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480" role="img" style="max-width:100%;height:auto"><rect width="860" height="480" fill="#ffffff"/>
 <text x="24" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" font-weight="700" fill="#1f2328">本周处罚事由分布</text>
-<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">2026-10-19 至 2026-10-25 · 国家金融监督管理总局及派出机构、人民银行公示 · 按事由计数 · N=13（同一罚单可涉多事由）</text>
+<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">2026-10-19 至 2026-10-25 · 按事由计数 · 处罚单 8 单 / 涉及机构 13 家（同一罚单可涉多事由）</text>
 <line x1="24" y1="80" x2="836" y2="80" stroke="#e6e8eb" stroke-width="1"/>
 <line x1="24" y1="384.0" x2="836" y2="384.0" stroke="#e6e8eb" stroke-width="1"/>
 <text x="16" y="388.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">0</text>
