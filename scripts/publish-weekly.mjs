@@ -67,6 +67,12 @@ let md = fs.readFileSync(path.join(src, 'report.md'), 'utf8')
 // 去掉已有 frontmatter（若被重复处理）
 md = md.replace(/^---\n[\s\S]*?\n---\n/, '')
 
+// 博客版措辞：不暴露本地生成脚本路径
+md = md.replace(
+  '> 图表由 `tools/make_chart.py` 生成（零依赖 SVG，数据来自本期正文表格）。',
+  '> 图表为本报告自制矢量图，数据与正文表格一致。'
+)
+
 const fm = [
   '---',
   `title: ${JSON.stringify(title)}`,
