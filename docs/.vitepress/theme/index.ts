@@ -6,6 +6,7 @@ import { createMermaidRenderer } from 'vitepress-mermaid-renderer'
 import GitTimeline from './components/GitTimeline.vue'
 import TagsPage from './components/TagsPage.vue'
 import ToTop from './components/ToTop.vue'
+import ExportPdf from './components/ExportPdf.vue'
 import RangeJt from './components/RangeJt.vue'
 import HeroIcon from './components/HeroIcon.vue'
 import './custom.css'
@@ -30,7 +31,7 @@ export default {
     watch(() => isDark.value, () => initMermaid())
 
     return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(ToTop), // 注入到底部插槽
+      'layout-bottom': () => h('div', [h(ToTop), h(ExportPdf)]), // 注入到底部插槽
       'home-hero-before': () => h(HeroIcon) // 替换首页 Hero 图片
     })
   },

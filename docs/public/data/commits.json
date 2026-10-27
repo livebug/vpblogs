@@ -1,5 +1,19 @@
 [
   {
+    "hash": "f54fd72",
+    "author": "livebug",
+    "date": "10/27/2026",
+    "message": "docs(regwatch): 优化博客版措辞并补充栏目说明",
+    "fullDate": "2026-10-27 09:21:59 +0800"
+  },
+  {
+    "hash": "242b5a3",
+    "author": "livebug",
+    "date": "10/27/2026",
+    "message": "feat(regwatch): 新增金融监管周报栏目与首期报告",
+    "fullDate": "2026-10-27 09:19:58 +0800"
+  },
+  {
     "hash": "7893817",
     "author": "livebug",
     "date": "7/12/2026",

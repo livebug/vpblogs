@@ -69,3 +69,89 @@
     justify-content: center;
   }
 }
+/* ========== 打印 / 导出 PDF ========== */
+/* 周报页面右下角「导出」按钮触发 window.print()，以下样式保证 A4 输出干净 */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  /* 隐藏站点框架与交互元素 */
+  .VPNav,
+  .VPSidebar,
+  .VPLocalNav,
+  .VPDocAside,
+  .VPFooter,
+  .VPBackdrop,
+  .back-to-top,
+  .export-pdf,
+  .VPDocFooter {
+    display: none !important;
+  }
+
+  /* 内容区拉满，去掉为侧边栏预留的空间 */
+  .VPDoc {
+    padding: 0 !important;
+  }
+  .VPDoc .container,
+  .VPDoc .content,
+  .VPDoc .content-container,
+  .VPDoc.has-aside .content-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .vp-doc {
+    padding: 0 !important;
+  }
+
+  body {
+    font-size: 11pt;
+    color: #000;
+    background: #fff;
+  }
+
+  .vp-doc h1 {
+    font-size: 20pt;
+    margin-top: 0;
+  }
+  .vp-doc h2 {
+    font-size: 14pt;
+    margin-top: 18pt;
+    page-break-after: avoid;
+  }
+  .vp-doc h3 {
+    font-size: 12pt;
+    page-break-after: avoid;
+  }
+
+  /* 表格与图表尽量不跨页 */
+  .vp-doc table {
+    font-size: 9pt;
+    page-break-inside: avoid;
+  }
+  .vp-doc img,
+  .vp-doc svg {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+  .vp-doc tr,
+  .vp-doc li {
+    page-break-inside: avoid;
+  }
+
+  /* 正文链接不显示蓝色，外部链接补印 URL 便于纸质核对 */
+  .vp-doc a {
+    color: #000;
+    text-decoration: none;
+  }
+  .vp-doc a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #555;
+    word-break: break-all;
+  }
+}
