@@ -89,6 +89,21 @@ const fm = [
   '',
 ].join('\n')
 
+// 死链检查：报告里的相对链接/图片必须存在于 weekly 目录，否则 CI 会构建失败
+const broken = []
+for (const [, href] of md.matchAll(/!?\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g)) {
+  if (/^(https?:)?\/\//.test(href) || href.startsWith('/') || href.startsWith('#') || href.startsWith('mailto:')) continue
+  const clean = decodeURIComponent(href.split('#')[0].split('?')[0])
+  if (!clean) continue
+  if (!fs.existsSync(path.join(WEEKLY_DIR, clean))) broken.push(href)
+}
+if (broken.length) {
+  console.error(`❌ 发现 ${broken.length} 个死链（会导致 VitePress 构建失败）：`)
+  for (const b of broken) console.error(`   - ${b}`)
+  console.error('   请先修正报告里的相对链接，或先发布被引用的文章。')
+  process.exit(1)
+}
+
 fs.mkdirSync(WEEKLY_DIR, { recursive: true })
 
 // 复制图表
