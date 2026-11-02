@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="480" viewBox="0 0 880 480" role="img" style="max-width:100%;height:auto"><rect width="880" height="480" fill="#ffffff"/>
+<text x="24" y="38" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" font-weight="700" fill="#1f2328">2026 年 10 月银行罚单：监管条线分布</text>
+<text x="24" y="64" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="13" fill="#57606a">单位：万元｜罚单 159 张、罚没合计 9,148.72 万元（截至 10-30）</text>
+<line x1="24" y1="80" x2="856" y2="80" stroke="#e6e8eb" stroke-width="1"/>
+<line x1="24" y1="384.0" x2="856" y2="384.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="16" y="388.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">0</text>
+<line x1="24" y1="316.0" x2="856" y2="316.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="16" y="320.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">1,500</text>
+<line x1="24" y1="248.0" x2="856" y2="248.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="16" y="252.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">3,000</text>
+<line x1="24" y1="180.0" x2="856" y2="180.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="16" y="184.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">4,500</text>
+<line x1="24" y1="112.0" x2="856" y2="112.0" stroke="#e6e8eb" stroke-width="1"/>
+<text x="16" y="116.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e" text-anchor="end">6,000</text>
+<rect x="149.7" y="119.9" width="24.0" height="264.1" rx="2" fill="#2b6cb0"/>
+<text x="161.7" y="113.9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">5,826.71</text>
+<text x="162.7" y="410.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11.5" fill="#57606a" text-anchor="middle">金监总局</text>
+<rect x="427.0" y="333.5" width="24.0" height="50.5" rx="2" fill="#2b6cb0"/>
+<text x="439.0" y="327.5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">1,114.66</text>
+<text x="440.0" y="410.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11.5" fill="#57606a" text-anchor="middle">人民银行</text>
+<rect x="704.3" y="283.9" width="24.0" height="100.1" rx="2" fill="#2b6cb0"/>
+<text x="716.3" y="277.9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" font-weight="600" fill="#1f2328" text-anchor="middle">2,207.35</text>
+<text x="717.3" y="410.0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11.5" fill="#57606a" text-anchor="middle">外汇局</text>
+<rect x="28" y="84" width="12" height="12" rx="2" fill="#2b6cb0"/>
+<text x="46" y="94" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="12" fill="#57606a">罚没金额（万元）</text>
+<text x="24" y="466" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="11" fill="#8b949e">金监总局 115 张 / 央行 31 张 / 外汇局 13 张。来源：21 世纪经济报道（2026-11-01）。</text>
+</svg>
